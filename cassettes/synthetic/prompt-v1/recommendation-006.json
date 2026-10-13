@@ -1,0 +1,621 @@
+{
+  "caseId": "recommendation-006",
+  "entries": {
+    "1204bac91c24c4de27a6561676e36348": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 6783,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-824448d67dd053d50b41b4ee",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "I couldn't find *Harry Potter* or other fantasy in our catalogue. The closest thing we have is *Signals in the Fog*, a science-fiction novel about messages from a ship that sank in 1912, and a copy is available.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_d742805ab5e0d74240588be7",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 729
+              },
+              "cache_creation_input_tokens": 729,
+              "cache_read_input_tokens": 1341,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 447,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_29ff86d21a37ef70c14c1234\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000014\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "1bfd0ccf33b3f8b93a22d928fc088b96": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 2757,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-92a682b93fb91b255431aeae",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "I couldn't find *Harry Potter* or other fantasy in our catalogue. The closest thing we have is *Signals in the Fog*, a science-fiction novel about messages from a ship that sank in 1912, and a copy is available.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_7be2ce588798e05326313011",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 729
+              },
+              "cache_creation_input_tokens": 729,
+              "cache_read_input_tokens": 1341,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 148,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_501d4f2d2d12df5128ca52bf\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000014\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "38bff957f469105e19dcda0cb91ac9f0": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 2709,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-07cafabb4e43b61de123dc47",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_501d4f2d2d12df5128ca52bf",
+                "input": {
+                  "available": true,
+                  "q": "",
+                  "tag": "novel"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_803696c329e9b302c0f02d55",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 100
+              },
+              "cache_creation_input_tokens": 100,
+              "cache_read_input_tokens": 1238,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 173,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_359668f11cfd8d82ad48343b\",\"content\":\"{\\\"results\\\":[],\\\"truncated\\\":false}\"}]",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "442ea1a85722bafd0153e4184645e87e": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 2799,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-edfcf5351bf0adf8623a0d34",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_29ff86d21a37ef70c14c1234",
+                "input": {
+                  "available": true,
+                  "q": "",
+                  "tag": "novel"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_5e06f1e5b587c5075d307080",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 100
+              },
+              "cache_creation_input_tokens": 100,
+              "cache_read_input_tokens": 1238,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 124,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_89327fc6d351122758e52210\",\"content\":\"{\\\"results\\\":[],\\\"truncated\\\":false}\"}]",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "56e5736682268c8d10d67d778b04665d": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 4541,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-3243dcbf5f62bd84d3912dd7",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_89327fc6d351122758e52210",
+                "input": {
+                  "q": "Harry Potter"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_c1d63fbe17715df7a55ab53a",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 15
+              },
+              "cache_creation_input_tokens": 15,
+              "cache_read_input_tokens": 1220,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 299,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 2569,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-2810f3ac496303675076c33e",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_f9086a1eeecc7f0d46bebb04",
+                "input": {
+                  "q": "Harry Potter"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_ee3f610e35461b569e3a229c",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1238,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 112,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 5576,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-ccaad735088532738679a67d",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_359668f11cfd8d82ad48343b",
+                "input": {
+                  "q": "Harry Potter"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_d078993f889d5569621ad15c",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1238,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 356,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: Do you have anything like Harry Potter?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "86c46e0af1fc22e3057b849fcf27d7b2": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 6355,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-e0d79b1fee147583827f2117",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "I couldn't find *Harry Potter* or other fantasy in our catalogue. The closest thing we have is *Signals in the Fog*, a science-fiction novel about messages from a ship that sank in 1912, and a copy is available.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_fc6e9e55bacef2890a13af0a",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 729
+              },
+              "cache_creation_input_tokens": 729,
+              "cache_read_input_tokens": 1341,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 412,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_f10baa05149b31210096c9f6\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000014\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "dceb210b9c7b1a53fc7fed5af177d325": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 3428,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-370752ad1c9d7daad530e809",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_f10baa05149b31210096c9f6",
+                "input": {
+                  "available": true,
+                  "q": "",
+                  "tag": "novel"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_6d285ca54cfb238ec510473a",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 100
+              },
+              "cache_creation_input_tokens": 100,
+              "cache_read_input_tokens": 1238,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 162,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_f9086a1eeecc7f0d46bebb04\",\"content\":\"{\\\"results\\\":[],\\\"truncated\\\":false}\"}]",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "e8f4ee0ef6961f26519ac9c0184c2b40": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 3240,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_41841f05d58383e05581a242",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 810,
+              "output_tokens": 244,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 4270,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_bb55f9fc9175e0c76492147d",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 810,
+              "output_tokens": 347,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 3340,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_0a9e0fdde926896917fc8d17",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 810,
+              "output_tokens": 254,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: I couldn't find *Harry Potter* or other fantasy in our catalogue. The closest thing w",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

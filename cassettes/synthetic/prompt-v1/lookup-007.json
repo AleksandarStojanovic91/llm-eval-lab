@@ -1,0 +1,444 @@
+{
+  "caseId": "lookup-007",
+  "entries": {
+    "ba05079b1021763dd655286b2339000f": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 6112,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-ffeaae1540f137ac7a854aae",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "We have three books on software testing: *Practical Statistics for Testers* by Ivan Gorski, *Test Driven Development: By Example* by Kent Beck, and *Testing in Production, Carefully* by Ivan Gorski.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_3f19b6cb99a6a3593f82b4d4",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 390
+              },
+              "cache_creation_input_tokens": 390,
+              "cache_read_input_tokens": 1238,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 451,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_65fa4e26fa5f77aa40907935\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000013\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "c7e019b6ab94a82ec2c06fa1a223d955": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 5170,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-24ef1f17b52469615beec472",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "We have three books on software testing: *Practical Statistics for Testers* by Ivan Gorski, *Test Driven Development: By Example* by Kent Beck, and *Testing in Production, Carefully* by Ivan Gorski.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_9d8535c5d344924dbc3ce10b",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 390
+              },
+              "cache_creation_input_tokens": 390,
+              "cache_read_input_tokens": 1238,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 349,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_7600519dd27cb70308f6c524\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000013\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "e726a68ccc152f422f2af1e47122ca82": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 5855,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-9763401bf129c769afe2787e",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "We have three books on software testing: *Practical Statistics for Testers* by Ivan Gorski, *Test Driven Development: By Example* by Kent Beck, and *Testing in Production, Carefully* by Ivan Gorski.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_978fcdace8737f972823257a",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 390
+              },
+              "cache_creation_input_tokens": 390,
+              "cache_read_input_tokens": 1238,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 383,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_a39300500bafd564c2eb7eff\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000013\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "f147038bc61048765ae905b89e0dff40": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 3609,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-46884bfc4c2dc6663079841a",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_65fa4e26fa5f77aa40907935",
+                "input": {
+                  "q": "",
+                  "tag": "testing"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_9b55006c0a583f271ae46bf7",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 15
+              },
+              "cache_creation_input_tokens": 15,
+              "cache_read_input_tokens": 1220,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 176,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 1875,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-3b5b8f5401b2d69f17107eda",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_a39300500bafd564c2eb7eff",
+                "input": {
+                  "q": "",
+                  "tag": "testing"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_cc4c8062a083694dbbbf26dd",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1238,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 103,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 2724,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-3e0ed608e4582b5162f7d634",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_7600519dd27cb70308f6c524",
+                "input": {
+                  "q": "",
+                  "tag": "testing"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_17e176bef13c600a6e383a79",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1238,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 169,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: Find me books about software testing.",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "f58ea17788d44ec37c80dc2868bfc558": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 4800,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_c4dd18a66b38236c22b72881",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 512,
+              "output_tokens": 400,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 4620,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_95b186ef1b504c82080a82d3",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 512,
+              "output_tokens": 382,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 4460,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_a1103f89df4400c99d082836",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 512,
+              "output_tokens": 366,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: We have three books on software testing: *Practical Statistics for Testers* by Ivan G",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,441 @@
+{
+  "caseId": "availability-007",
+  "entries": {
+    "48e47a8dd53f96246ec235180e05a145": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 5107,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-4dc7ef3f88a415992fe9e5e2",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "*Small Gods of the Kitchen* has no copies available right now. You can reserve it in the library app and you'll be told when a copy comes back.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_80f017dd80d17b34b4b0e483",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 199
+              },
+              "cache_creation_input_tokens": 199,
+              "cache_read_input_tokens": 1520,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 307,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_4d9b641dd47c7366d8205fdd\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000015\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "61aebf9b8899da306d0bf790774a8044": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 3860,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC: totalCopies is 0: the library owns no copy, so 'no copies available right now' and the reservation advice are misleading.\",\"verdict\":\"fail\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC: The suggested next step (reserve) cannot work for a book with no copies.\",\"verdict\":\"fail\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_c2612625882f31e0c8070ff7",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 316,
+              "output_tokens": 306,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 4020,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC: totalCopies is 0: the library owns no copy, so 'no copies available right now' and the reservation advice are misleading.\",\"verdict\":\"fail\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC: The suggested next step (reserve) cannot work for a book with no copies.\",\"verdict\":\"fail\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_d7574ec3942683fee6cb611f",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 316,
+              "output_tokens": 322,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 4400,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC: totalCopies is 0: the library owns no copy, so 'no copies available right now' and the reservation advice are misleading.\",\"verdict\":\"fail\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC: The suggested next step (reserve) cannot work for a book with no copies.\",\"verdict\":\"fail\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_47580f9404ddeeb4513b3c7b",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 316,
+              "output_tokens": 360,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: *Small Gods of the Kitchen* by Mira Toth is in our catalogue, but the library doesn't",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "e2b9e7272fa0a69e98092e3a0f3e9f65": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 4801,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-cdd209b8e39ac578e912ceb1",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "*Small Gods of the Kitchen* has no copies available right now. You can reserve it in the library app and you'll be told when a copy comes back.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_3799454ebfc9d0bed4540ebb",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 199
+              },
+              "cache_creation_input_tokens": 199,
+              "cache_read_input_tokens": 1520,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 294,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_ad029ad0fd414e7bc683c3dd\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000015\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "e6aa634f9311202668cb79f16ebf28d8": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 5015,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-3d936a706c133aa771b17a99",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_ad029ad0fd414e7bc683c3dd",
+                "input": {
+                  "q": "Small Gods of the Kitchen"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_76c265077026654c41fc745a",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 15
+              },
+              "cache_creation_input_tokens": 15,
+              "cache_read_input_tokens": 1502,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 352,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 2999,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-ff63f21d6c97c01fbf909357",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_4d9b641dd47c7366d8205fdd",
+                "input": {
+                  "q": "Small Gods of the Kitchen"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_060e948809d8f23fba21c221",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1520,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 162,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 5604,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-fa150966eddeaccc16bd595d",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_6102b2387af39e74c9b7aa7c",
+                "input": {
+                  "q": "Small Gods of the Kitchen"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_430e7aa80ad30a1530f1f285",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1520,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 373,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: Is Small Gods of the Kitchen available?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "eaae2392b18df3240be3cdf2b2e1a351": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 3696,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-9b0e0e639b85f40befdc3f5b",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "*Small Gods of the Kitchen* has no copies available right now. You can reserve it in the library app and you'll be told when a copy comes back.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_770ddd242262f985e4df36ec",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 199
+              },
+              "cache_creation_input_tokens": 199,
+              "cache_read_input_tokens": 1520,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 218,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_6102b2387af39e74c9b7aa7c\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000015\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

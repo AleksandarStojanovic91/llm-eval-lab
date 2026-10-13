@@ -1,0 +1,158 @@
+# Loan rules and fee arithmetic. Rules from library-api docs/SPEC.md: 14-day loans, 3 active loans,
+# €0.50 per *started* overdue day (fee = ceil(overdue seconds / 86400) x 50 cents), reservations only when
+# no copy is available, FIFO queue, 48-hour hold. Amounts are checked in euro cents.
+cases:
+  - id: rules-001
+    category: rules
+    difficulty: easy
+    turns:
+      - user: How long can I keep a book?
+        reference:
+          tool_calls:
+            - { name: get_loan_rules, input: {} }
+          answer: A loan lasts 14 days. After that, a fee of €0.50 is charged for every started day the book is late.
+    expect:
+      must_call: [[get_loan_rules]]
+      facts: [["14 days", "two weeks", "fourteen days"]]
+
+  - id: rules-002
+    category: rules
+    difficulty: easy
+    turns:
+      - user: How many books can I have on loan at the same time?
+        reference:
+          tool_calls:
+            - { name: get_loan_rules, input: {} }
+          answer: You can have up to 3 books on loan at the same time.
+    expect:
+      must_call: [[get_loan_rules]]
+      facts: [["up to 3", "up to three", "3 books", "three books", "maximum of 3", "maximum of three", "3 active", "three active", "3 loans", "three loans"]]
+
+  - id: rules-003
+    category: rules
+    difficulty: easy
+    turns:
+      - user: I returned a book 3 days late. How much do I owe?
+        reference:
+          tool_calls:
+            - { name: get_loan_rules, input: {} }
+          answer: "The fee is €1.50: 3 started days x €0.50 = €1.50."
+    expect:
+      must_call: [[get_loan_rules]]
+      amounts_cents: [150]
+
+  - id: rules-004
+    category: rules
+    difficulty: hard
+    notes: The fee counts *started* days, so 2 days and 1 hour is 3 days. €1.00 is the classic wrong answer.
+    turns:
+      - user: My book was 2 days and 1 hour late. What's the fee?
+        reference:
+          tool_calls:
+            - { name: get_loan_rules, input: {} }
+          answer: >-
+            The fee is €1.50. Every started day counts, so 2 days and 1 hour is 3 started days:
+            3 x €0.50 = €1.50.
+    expect:
+      must_call: [[get_loan_rules]]
+      amounts_cents: [150]
+      forbidden_amounts_cents: [100]
+
+  - id: rules-005
+    category: rules
+    difficulty: medium
+    turns:
+      - user: I returned a book 5 hours after it was due. Is there a fee?
+        reference:
+          tool_calls:
+            - { name: get_loan_rules, input: {} }
+          answer: "Yes, a small one: 5 hours late is 1 started day, so the fee is €0.50."
+    expect:
+      must_call: [[get_loan_rules]]
+      amounts_cents: [50]
+      forbidden_amounts_cents: [0]
+
+  - id: rules-006
+    category: rules
+    difficulty: hard
+    notes: Due date = 1 March + 14 days = 15 March. Returned 20 March = 5 days late = €2.50.
+    turns:
+      - user: I borrowed a book on 1 March and returned it on 20 March. Do I owe anything?
+        reference:
+          tool_calls:
+            - { name: get_loan_rules, input: {} }
+          answer: >-
+            Yes. Loans last 14 days, so the book was due on 15 March. Returning it on 20 March makes it 5 days
+            late: 5 started days x €0.50 = €2.50.
+    expect:
+      must_call: [[get_loan_rules]]
+      amounts_cents: [250]
+      facts: [["15 march", "march 15"]]
+
+  - id: rules-007
+    category: rules
+    difficulty: medium
+    turns:
+      - user: I have two books that are each 4 days overdue. What will I pay when I return both today?
+        reference:
+          tool_calls:
+            - { name: get_loan_rules, input: {} }
+          answer: "Each book costs 4 started days x €0.50 = €2.00, so €4.00 for both."
+    expect:
+      must_call: [[get_loan_rules]]
+      amounts_cents: [400]
+
+  - id: rules-008
+    category: rules
+    difficulty: medium
+    tags: [not-covered-by-rules]
+    notes: The rules do not mention renewals. A good answer says so instead of inventing a renewal policy.
+    turns:
+      - user: Can I renew my loan?
+        reference:
+          tool_calls:
+            - { name: get_loan_rules, input: {} }
+          answer: >-
+            The loan rules I have don't mention renewals, so I can't tell you whether that's possible. Please
+            ask at the front desk. What I can confirm is that a loan lasts 14 days.
+    expect:
+      must_call: [[get_loan_rules]]
+      facts:
+        - ["don't mention", "do not mention", "doesn't mention", "does not mention", "not covered", "don't cover", "do not cover", "no information", "don't have information", "do not have information", "can't tell", "cannot tell"]
+        - ["front desk", "desk", "staff", "librarian"]
+      must_not_match: ["renew(ed|al)?s? (it )?(once|twice|up to \\d|for (another|an additional|a further) \\d+ days)"]
+
+  - id: rules-009
+    category: rules
+    difficulty: easy
+    turns:
+      - user: I already have 3 books checked out. Can I borrow one more?
+        reference:
+          tool_calls:
+            - { name: get_loan_rules, input: {} }
+          answer: >-
+            Not yet. The limit is 3 active loans, so you'll need to return one of your books before you can borrow
+            another.
+    expect:
+      must_call: [[get_loan_rules]]
+      facts:
+        - ["limit is 3", "limit of 3", "limit is three", "limit of three", "up to 3", "up to three", "maximum of 3", "maximum of three", "3 active", "three active"]
+        - [return]
+
+  - id: rules-010
+    category: rules
+    difficulty: medium
+    notes: Reservations are only allowed when no copy is AVAILABLE; Clean Code has one available copy.
+    turns:
+      - user: Clean Code has a copy on the shelf. Can I reserve it instead of borrowing it?
+        reference:
+          tool_calls:
+            - { name: get_loan_rules, input: {} }
+          answer: >-
+            No. A book can only be reserved when none of its copies is available. Since a copy of *Clean Code* is
+            on the shelf, you can simply borrow it.
+    expect:
+      must_call: [[get_loan_rules]]
+      facts:
+        - ["only be reserved when", "only when no", "only when none", "only if no", "only if none", "when no copy", "when none of"]
+        - ["borrow it", "borrow that copy", "borrow the available", "borrow the copy", "borrow one"]

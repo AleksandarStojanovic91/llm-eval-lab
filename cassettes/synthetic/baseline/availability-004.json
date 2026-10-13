@@ -1,0 +1,447 @@
+{
+  "caseId": "availability-004",
+  "entries": {
+    "1ec01bd07502b82be9ecb2f93089c5ed": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 5719,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-c12ee947d09121d363bcda9a",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_e348fd45f417605fa172bdd3",
+                "input": {
+                  "available": true,
+                  "q": "",
+                  "tag": "mystery"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_b8f9ca3801845f2bb83a2f28",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 16
+              },
+              "cache_creation_input_tokens": 16,
+              "cache_read_input_tokens": 1502,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 401,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 4765,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-ceee98ee2c4a596ba61fbb05",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_c7ee760b058651422550ef1b",
+                "input": {
+                  "available": true,
+                  "q": "",
+                  "tag": "mystery"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_2276c3849dd20114a907bd52",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1521,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 300,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 2705,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-132716b434552375a67e3fa2",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_e0a940932c4cba68547c68be",
+                "input": {
+                  "available": true,
+                  "q": "",
+                  "tag": "mystery"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_39fe1b850ffb33c394139953",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1521,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 111,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: Which mystery novels can I borrow right now?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "28a8c223a4e2cdba46c0acdd1afb167c": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 4240,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_da1174cd792da44e17f59d57",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 536,
+              "output_tokens": 344,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 4880,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_d806a1799b93062b1f4f6f29",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 536,
+              "output_tokens": 408,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 4410,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_7c4fbe90b6f5a7051f55a439",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 536,
+              "output_tokens": 361,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: These mysteries have a copy on the shelf right now: *The Cartographer's Daughter* and",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "596cf781a5890d307abadcdf7240ed08": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 3171,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-65f0b95ab657148804cfaf1c",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "These mysteries have a copy on the shelf right now: *The Cartographer's Daughter* and *The Lighthouse Ledger*, both by Vesna Kord, and *The Overdue Notice* by Lena Marsh.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_28099a659aac7ed2e23421ba",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 433
+              },
+              "cache_creation_input_tokens": 433,
+              "cache_read_input_tokens": 1521,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 211,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_e348fd45f417605fa172bdd3\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000010\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "a4883cc419f8c6dd46989dad9d989d47": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 4701,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-94922803e533221cdf1ae55f",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "These mysteries have a copy on the shelf right now: *The Cartographer's Daughter* and *The Lighthouse Ledger*, both by Vesna Kord, and *The Overdue Notice* by Lena Marsh.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_5c555c46a9d0f8704b144c54",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 433
+              },
+              "cache_creation_input_tokens": 433,
+              "cache_read_input_tokens": 1521,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 297,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_c7ee760b058651422550ef1b\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000010\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "fbf36933aaec945dd4ffccb19b9e9e84": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 4417,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-9e399a21f2f9b20815ad82f8",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "These mysteries have a copy on the shelf right now: *The Cartographer's Daughter* and *The Lighthouse Ledger*, both by Vesna Kord, and *The Overdue Notice* by Lena Marsh.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_8fce35598cb93a34c81ba659",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 433
+              },
+              "cache_creation_input_tokens": 433,
+              "cache_read_input_tokens": 1521,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 286,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_e0a940932c4cba68547c68be\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000010\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

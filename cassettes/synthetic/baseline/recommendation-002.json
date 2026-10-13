@@ -1,0 +1,621 @@
+{
+  "caseId": "recommendation-002",
+  "entries": {
+    "72f8a8a00cee8e87cb7f63d4d1b5a637": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 3488,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-4dd8fabf8f191499c067d381",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "*Designing Data-Intensive Applications* itself is out right now, but these software books are on the shelf: *Architecture of Small Teams* by Dana Holt, on how small teams own a system end to end, and *Testing in Production, Carefully* by Ivan Gorski, on feature flags and observability.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_b494c49f9f50c81e889c8908",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 492
+              },
+              "cache_creation_input_tokens": 492,
+              "cache_read_input_tokens": 1741,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 187,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_1be14cfc250c2b3f42e1ffc5\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000019\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "90a848c58dcaffe35f5cfa789622c508": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 5011,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-3a02598d00938c8b4ee007c4",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_1be14cfc250c2b3f42e1ffc5",
+                "input": {
+                  "available": true,
+                  "q": "",
+                  "tag": "software"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_040d6436f96cb7a3b811ad68",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 208
+              },
+              "cache_creation_input_tokens": 208,
+              "cache_read_input_tokens": 1530,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 326,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_7f787a20c5878e2ed70d07dc\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000002\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "93b6a12080ffbe48244e6dcfa3b6d1de": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 3078,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-03d5e1bd5fc18f030efe529c",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "*Designing Data-Intensive Applications* itself is out right now, but these software books are on the shelf: *Architecture of Small Teams* by Dana Holt, on how small teams own a system end to end, and *Testing in Production, Carefully* by Ivan Gorski, on feature flags and observability.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_474a7d47481c2f9922456f64",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 492
+              },
+              "cache_creation_input_tokens": 492,
+              "cache_read_input_tokens": 1741,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 149,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_601f5e78560ce6f277e29cac\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000019\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "a999df56e8c6113241da6098808f0dde": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 4670,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_760ab5a8b464f2b61fcda5e6",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 810,
+              "output_tokens": 387,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 5070,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_b334fdb7ec739f454386777c",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 810,
+              "output_tokens": 427,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 3980,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_eff84b5c16c8ff73b982e80a",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 810,
+              "output_tokens": 318,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: *Designing Data-Intensive Applications* itself is out right now, but these software b",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "e1c9b875a70f270a5f1c2ece0cb1fef3": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 2366,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-4c2dbf6946c33f73f5c88006",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_b24079130cac2bf035127980",
+                "input": {
+                  "available": true,
+                  "q": "",
+                  "tag": "software"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_e92756366f4981c9d4af6aae",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 208
+              },
+              "cache_creation_input_tokens": 208,
+              "cache_read_input_tokens": 1530,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 133,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_bdca89892903d158c0e76945\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000002\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "e9cfb1833523761048da08e994b9a6f2": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 5552,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-10efd76ea85f8796cb79ce97",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_bdca89892903d158c0e76945",
+                "input": {
+                  "q": "Designing Data-Intensive Applications"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_7e002239e802f454cad66a5f",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 25
+              },
+              "cache_creation_input_tokens": 25,
+              "cache_read_input_tokens": 1502,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 353,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 4092,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-10907d425b2797cf84783957",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_7f787a20c5878e2ed70d07dc",
+                "input": {
+                  "q": "Designing Data-Intensive Applications"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_cff61702ecec3af74fde6cfd",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1530,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 245,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 3119,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-c89076d5b3076f8613ff1a56",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_6cef658b5f8316f1cc64705a",
+                "input": {
+                  "q": "Designing Data-Intensive Applications"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_708fb029488373d6e6d8e396",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1530,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 171,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: Something like Designing Data-Intensive Applications that I can borrow today?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "f82b865ef2fd63ab24a692fdfcb3c375": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 3880,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-76a4650c95f5b6a5d8ceb9a2",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "*Designing Data-Intensive Applications* itself is out right now, but these software books are on the shelf: *Architecture of Small Teams* by Dana Holt, on how small teams own a system end to end, and *Testing in Production, Carefully* by Ivan Gorski, on feature flags and observability.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_678378b88a17cc1dfabd06f4",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 492
+              },
+              "cache_creation_input_tokens": 492,
+              "cache_read_input_tokens": 1741,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 248,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_b24079130cac2bf035127980\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000019\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "ff71412bad841bb905dda275c120b08e": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 2988,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-d8ac19520480842441905f81",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_601f5e78560ce6f277e29cac",
+                "input": {
+                  "available": true,
+                  "q": "",
+                  "tag": "software"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_238473acaa88d922e662e1f5",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 208
+              },
+              "cache_creation_input_tokens": 208,
+              "cache_read_input_tokens": 1530,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 157,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_6cef658b5f8316f1cc64705a\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000002\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

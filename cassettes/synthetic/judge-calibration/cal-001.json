@@ -1,0 +1,50 @@
+{
+  "caseId": "cal-001",
+  "entries": {
+    "b693ffe7cc525f96f7eacac721840d2c": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 4040,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC: No problem found.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC: No problem found.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC: No problem found.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC: No problem found.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_b05b7a25eef7371c112155b1",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 222,
+              "output_tokens": 324,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: Yes, one of the two copies of *Clean Code* is available.\n</reference>\n\n<transcript>\n[",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

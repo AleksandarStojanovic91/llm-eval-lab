@@ -1,0 +1,633 @@
+{
+  "caseId": "availability-008",
+  "entries": {
+    "4cf0b27d090d4f70a76807dd7f0888e7": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 3148,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-0020df94ba0e9a714d840587",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_a3b7f9c85ef9842b28607664",
+                "input": {
+                  "bookId": "20000000-0000-4000-8000-000000000020"
+                },
+                "name": "list_copies",
+                "type": "tool_use"
+              },
+              {
+                "id": "toolu_syn_2ae173febda736727edaed49",
+                "input": {},
+                "name": "get_loan_rules",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_255e8c42dfebcee368f47467",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 194
+              },
+              "cache_creation_input_tokens": 194,
+              "cache_read_input_tokens": 1529,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 208,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_d71e33de51ff760c7c7033e3\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000020\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "725cd57d06631afea71ae0fa3a71f513": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 6525,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-c1df32162829fcd820c2ab5d",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_a6b5f362c79248585a81c50f",
+                "input": {
+                  "bookId": "20000000-0000-4000-8000-000000000020"
+                },
+                "name": "list_copies",
+                "type": "tool_use"
+              },
+              {
+                "id": "toolu_syn_8e5acdcbadb8016d1df19c3a",
+                "input": {},
+                "name": "get_loan_rules",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_0b61f1417b957d8b8fc0f8f4",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 194
+              },
+              "cache_creation_input_tokens": 194,
+              "cache_read_input_tokens": 1529,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 421,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_3edba7cc7540cf71c1e9ca32\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000020\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "971e517734ec1833506417c9a1bf5482": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 2746,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-2c01cec57e16ab07625933fd",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "The only copy of *Harbour Lights* is on loan right now. You can reserve it in the library app or at the front desk. Reservations are a first-come, first-served queue, and when the copy comes back it is held for the first person in the queue for 48 hours.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_2d9f140668e49fc47b58dd16",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 461
+              },
+              "cache_creation_input_tokens": 461,
+              "cache_read_input_tokens": 1726,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 153,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_f5a8b5510ad22f3d4097c635\",\"content\":\"{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000020\\\",\\\"copies\\\":[{\\\"barcode",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "a1a69a928d6e1cdd19d3d415d20c2137": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 5398,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-dac1c6fc4d5c10746e8d7f00",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_f5a8b5510ad22f3d4097c635",
+                "input": {
+                  "bookId": "20000000-0000-4000-8000-000000000020"
+                },
+                "name": "list_copies",
+                "type": "tool_use"
+              },
+              {
+                "id": "toolu_syn_ed0555fb0c35543c7f4a0d4c",
+                "input": {},
+                "name": "get_loan_rules",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_e35de64a6194bc11705e4b18",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 194
+              },
+              "cache_creation_input_tokens": 194,
+              "cache_read_input_tokens": 1529,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 380,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_30a624cbf5881ee68672844a\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000020\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "acb08c26b04a918ff98bd34b3903ab24": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 6066,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-54541581e0fd52be358b17f7",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "The only copy of *Harbour Lights* is on loan right now. You can reserve it in the library app or at the front desk. Reservations are a first-come, first-served queue, and when the copy comes back it is held for the first person in the queue for 48 hours.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_da640d6160467845b4cb02a4",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 461
+              },
+              "cache_creation_input_tokens": 461,
+              "cache_read_input_tokens": 1726,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 411,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_a3b7f9c85ef9842b28607664\",\"content\":\"{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000020\\\",\\\"copies\\\":[{\\\"barcode",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "b9a58a2ca83105dc207b5c0a52cc6819": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 6355,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-20ba16fa7d676d3a3c72ef71",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "The only copy of *Harbour Lights* is on loan right now. You can reserve it in the library app or at the front desk. Reservations are a first-come, first-served queue, and when the copy comes back it is held for the first person in the queue for 48 hours.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_2a8fa607aee9e556f86ca089",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 461
+              },
+              "cache_creation_input_tokens": 461,
+              "cache_read_input_tokens": 1726,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 450,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_a6b5f362c79248585a81c50f\",\"content\":\"{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000020\\\",\\\"copies\\\":[{\\\"barcode",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "d9cabaf868438670b904632b1e243c40": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 4437,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-0f29b4e6a416f459c175012d",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_d71e33de51ff760c7c7033e3",
+                "input": {
+                  "q": "Harbour Lights"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_4aaa451ad65476b7c961bba5",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 24
+              },
+              "cache_creation_input_tokens": 24,
+              "cache_read_input_tokens": 1502,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 261,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 3917,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-aed6777030c769463b464d42",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_30a624cbf5881ee68672844a",
+                "input": {
+                  "q": "Harbour Lights"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_b9788e3ea6927f102f367550",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1529,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 265,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 3209,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-ecdac61fd39ff84784339954",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_3edba7cc7540cf71c1e9ca32",
+                "input": {
+                  "q": "Harbour Lights"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_559d93242b1769d79b8bdd3c",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1529,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 212,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: Is there an available copy of Harbour Lights, and if not, what can I do?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "f976aef1b94f634e5f7bcca12b983d4f": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 3160,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_945e919e5ae711bc2afad9b4",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 720,
+              "output_tokens": 236,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 4430,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_b86395c3f9872f51af9a5bbf",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 720,
+              "output_tokens": 363,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 4950,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_f695310186c155d20dcf6000",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 720,
+              "output_tokens": 415,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: The only copy of *Harbour Lights* is on loan right now. You can reserve it in the lib",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,435 @@
+{
+  "caseId": "rules-010",
+  "entries": {
+    "1db8a69f2560daf7e9ecc51b675e2ff4": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 3471,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-e0970909f1a5affa3cb43f94",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "No. A book can only be reserved when none of its copies is available. Since a copy of *Clean Code* is on the shelf, you can simply borrow it.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_6ce4b4ef410ab0d4c114bf51",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 371
+              },
+              "cache_creation_input_tokens": 371,
+              "cache_read_input_tokens": 1248,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 221,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_109590fc18c0293f81bea8bb\",\"content\":\"{\\\"loanDays\\\":14,\\\"maxActiveLoans\\\":3,\\\"overdueFee\\\":{\\\"amountPerStartedDay",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "770829690f843bccecb4935b5c7c6c4b": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 4670,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_ef7abfc1710e75f07af52fbb",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 473,
+              "output_tokens": 387,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 5040,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_600e7eb84b008ccae29b9739",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 473,
+              "output_tokens": 424,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 3760,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_86769b429365b4cbf15088f0",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 473,
+              "output_tokens": 296,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: No. A book can only be reserved when none of its copies is available. Since a copy of",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "e21996252e7525634e45e53c61c8e484": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 2117,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-ad0ab8512a560b3e2694ad0b",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_eda57c62286e8237d3b8f61d",
+                "input": {},
+                "name": "get_loan_rules",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_992ca5321250d6c418af1877",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 25
+              },
+              "cache_creation_input_tokens": 25,
+              "cache_read_input_tokens": 1220,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 72,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 2193,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-557f49305d1ca620b549bf10",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_061fb502fe1f85367ab37e65",
+                "input": {},
+                "name": "get_loan_rules",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_5218ef5edf1e6bf0394c22bf",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1248,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 106,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 4396,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-456e89fe2a26d0fa55d2dfa2",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_109590fc18c0293f81bea8bb",
+                "input": {},
+                "name": "get_loan_rules",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_63e2a255f1bd303dd884a4ef",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1248,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 308,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: Clean Code has a copy on the shelf. Can I reserve it instead of borrowing it?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "e3b5ea6cfb6628473461f703bfb233f5": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 6090,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-7f0f984d855511aaea82526c",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "No. A book can only be reserved when none of its copies is available. Since a copy of *Clean Code* is on the shelf, you can simply borrow it.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_4f4460a3f00f9638a17cca5c",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 371
+              },
+              "cache_creation_input_tokens": 371,
+              "cache_read_input_tokens": 1248,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 413,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_061fb502fe1f85367ab37e65\",\"content\":\"{\\\"loanDays\\\":14,\\\"maxActiveLoans\\\":3,\\\"overdueFee\\\":{\\\"amountPerStartedDay",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "eb186d4ef2223f03a27836e370e1a5b2": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 3188,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-ea3c131383d27ce3a498a170",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "No. A book can only be reserved when none of its copies is available. Since a copy of *Clean Code* is on the shelf, you can simply borrow it.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_dd276531c4ae0065b6158b02",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 371
+              },
+              "cache_creation_input_tokens": 371,
+              "cache_read_input_tokens": 1248,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 144,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_eda57c62286e8237d3b8f61d\",\"content\":\"{\\\"loanDays\\\":14,\\\"maxActiveLoans\\\":3,\\\"overdueFee\\\":{\\\"amountPerStartedDay",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

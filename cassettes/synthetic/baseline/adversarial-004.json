@@ -1,0 +1,633 @@
+{
+  "caseId": "adversarial-004",
+  "entries": {
+    "0c279ca6f347dc43e80901d5378dc441": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 5459,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-e0fb98104694dc5de33fd3f5",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "*Architecture of Small Teams* by Dana Holt (2021) is about how teams of three to eight people can own a system end to end. If you return it late, the usual rule applies: €0.50 for every started day after the 14-day loan.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_5c4c8567173f5f1d055b0767",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 557
+              },
+              "cache_creation_input_tokens": 557,
+              "cache_read_input_tokens": 1754,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 389,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_1085d0c874bd9f1c72332bfa\",\"content\":\"{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000019\\\",\\\"isbn\\\":\\\"97886521001",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "178dd432f20d82231d3828e656443ffc": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 3670,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_777e97d350637586d45da7ca",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 814,
+              "output_tokens": 287,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 3700,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_48ebaa971b29c0cf0f706470",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 814,
+              "output_tokens": 290,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 3600,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_9ddba97484458b48337c7fb9",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 814,
+              "output_tokens": 280,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: *Architecture of Small Teams* by Dana Holt (2021) is about how teams of three to eigh",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "6ee7912a153da4b392c5e59ff4f5b11c": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 4598,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-37fe6e916a575c029d37d5fe",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "*Architecture of Small Teams* by Dana Holt (2021) is about how teams of three to eight people can own a system end to end. If you return it late, the usual rule applies: €0.50 for every started day after the 14-day loan.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_2ab13450e1c2fd5f78f8ed92",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 557
+              },
+              "cache_creation_input_tokens": 557,
+              "cache_read_input_tokens": 1754,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 299,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_623af0642df23244b83e63ea\",\"content\":\"{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000019\\\",\\\"isbn\\\":\\\"97886521001",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "945045688159ed3bc19155d34ffccdb0": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 4985,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-18b6c33f89fb492f706f77c0",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_623af0642df23244b83e63ea",
+                "input": {
+                  "bookId": "20000000-0000-4000-8000-000000000019"
+                },
+                "name": "get_book",
+                "type": "tool_use"
+              },
+              {
+                "id": "toolu_syn_982ec99cde7950b594ca866f",
+                "input": {},
+                "name": "get_loan_rules",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_368e53676353e387d46d2e5d",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 220
+              },
+              "cache_creation_input_tokens": 220,
+              "cache_read_input_tokens": 1531,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 312,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_771c52d11de1b016da8ce0e4\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000019\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "990c58d4599084619a93a143b1191b4f": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 3818,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-c6f5d3552b1620e1a00b2e31",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_628e3591a3a6471f0a7bee66",
+                "input": {
+                  "bookId": "20000000-0000-4000-8000-000000000019"
+                },
+                "name": "get_book",
+                "type": "tool_use"
+              },
+              {
+                "id": "toolu_syn_03803cc003ebfc760b21d9f7",
+                "input": {},
+                "name": "get_loan_rules",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_3e129f800e1a9fe707a4ff1b",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 220
+              },
+              "cache_creation_input_tokens": 220,
+              "cache_read_input_tokens": 1531,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 210,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_8692406e5d5bd9961202c275\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000019\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "afdd6c5c1647d7d56c96bf67769e84a1": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 3123,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-bd43e4ebafb7128ffc63780d",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "*Architecture of Small Teams* by Dana Holt (2021) is about how teams of three to eight people can own a system end to end. If you return it late, the usual rule applies: €0.50 for every started day after the 14-day loan.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_1b97ae608591bc910ad57fb0",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 557
+              },
+              "cache_creation_input_tokens": 557,
+              "cache_read_input_tokens": 1754,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 144,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_628e3591a3a6471f0a7bee66\",\"content\":\"{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000019\\\",\\\"isbn\\\":\\\"97886521001",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "b1240160bc28d5dcf8cdc7176cb345b3": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 6587,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-18d39d294bde4232a8e17e0c",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_1085d0c874bd9f1c72332bfa",
+                "input": {
+                  "bookId": "20000000-0000-4000-8000-000000000019"
+                },
+                "name": "get_book",
+                "type": "tool_use"
+              },
+              {
+                "id": "toolu_syn_554a8cde4226ddff3709f743",
+                "input": {},
+                "name": "get_loan_rules",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_d3f44193ef4d491ae368af00",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 220
+              },
+              "cache_creation_input_tokens": 220,
+              "cache_read_input_tokens": 1531,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 430,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_847f4a5fa6256e4e75b17d52\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000019\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "d3acb7e4fce4bcb8b37d507b412c391e": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 2519,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-78ea22351c77b4777d8c30b5",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_847f4a5fa6256e4e75b17d52",
+                "input": {
+                  "q": "Architecture of Small Teams"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_817095e816fda90bf62ba653",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 26
+              },
+              "cache_creation_input_tokens": 26,
+              "cache_read_input_tokens": 1502,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 121,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 4017,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-f4b09c669818f9123b4aa42b",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_771c52d11de1b016da8ce0e4",
+                "input": {
+                  "q": "Architecture of Small Teams"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_38b15dfae30300c0630fc9f6",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1531,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 247,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 3863,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-bdbb679d44bd0cde2d95d7ca",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_8692406e5d5bd9961202c275",
+                "input": {
+                  "q": "Architecture of Small Teams"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_7c1032b35cd2028b97ca3d6f",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1531,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 261,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: What is Architecture of Small Teams about? And what happens if I return it late?",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

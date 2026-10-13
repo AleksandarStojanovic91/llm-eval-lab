@@ -1,0 +1,444 @@
+{
+  "caseId": "recommendation-005",
+  "entries": {
+    "1cd4699d8086d2f5eed36beca0556282": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 5272,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-012dc23ec136069396b1cc50",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "Great question! As a QA engineer you'll find a few books in our collection especially useful. Here is what I'd suggest, with a note on each:\n\n- *Practical Statistics for Testers* by Ivan Gorski (2023). This one explains confidence intervals, flaky tests and sample sizes for people who test software. It is very practical if you ever need to decide how many runs are enough or whether a failure rate really changed. Our only copy is on loan at the moment, so you may want to reserve it in the library app or at the front desk.\n- *Testing in Production, Carefully* by Ivan Gorski (2024). It covers feature flags, canary releases and observability for teams that want to learn from production without hurting users. Both copies are on the shelf, so you could take it home today.\n- *Test Driven Development: By Example* by Kent Beck (2002). A classic on the red, green, refactor cycle, useful for understanding how developers write tests first and how that shapes the code you end up testing. Our copy is available right now.\n\nIf you can only pick one, I would start with *Testing in Production, Carefully*, because it is available today and connects testing with how systems behave once they are released. Then reserve the statistics book for later.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_d68e67f78ae8e0c1413e055d",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 390
+              },
+              "cache_creation_input_tokens": 390,
+              "cache_read_input_tokens": 1525,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 389,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_7625047a3b1a48fc64b069c7\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000013\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "384a1dfed7096f4b020e4980dfe578c5": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 5987,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-449819a97007b978de3ed290",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "Great question! As a QA engineer you'll find a few books in our collection especially useful. Here is what I'd suggest, with a note on each:\n\n- *Practical Statistics for Testers* by Ivan Gorski (2023). This one explains confidence intervals, flaky tests and sample sizes for people who test software. It is very practical if you ever need to decide how many runs are enough or whether a failure rate really changed. Our only copy is on loan at the moment, so you may want to reserve it in the library app or at the front desk.\n- *Testing in Production, Carefully* by Ivan Gorski (2024). It covers feature flags, canary releases and observability for teams that want to learn from production without hurting users. Both copies are on the shelf, so you could take it home today.\n- *Test Driven Development: By Example* by Kent Beck (2002). A classic on the red, green, refactor cycle, useful for understanding how developers write tests first and how that shapes the code you end up testing. Our copy is available right now.\n\nIf you can only pick one, I would start with *Testing in Production, Carefully*, because it is available today and connects testing with how systems behave once they are released. Then reserve the statistics book for later.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_c20ecff0d39b290465a60918",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 390
+              },
+              "cache_creation_input_tokens": 390,
+              "cache_read_input_tokens": 1525,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 404,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_73c5676f00765cd2d70d3a2a\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000013\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "85455a61c3c4d9be93919aaaa5ec63ec": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 5772,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-03fa5ee7f518302b2951a29b",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_7625047a3b1a48fc64b069c7",
+                "input": {
+                  "q": "",
+                  "tag": "testing"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_4ca76abbb3d5ce4b01c36086",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 20
+              },
+              "cache_creation_input_tokens": 20,
+              "cache_read_input_tokens": 1502,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 379,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 3188,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-8ce573e08ad431b0c4bfd5cc",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_2d49698d358807bc819c6660",
+                "input": {
+                  "q": "",
+                  "tag": "testing"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_0f82e9d67bc0ff171a9897a9",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1525,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 201,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 4090,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-bcc97fe584ff1d78e37fa6be",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_73c5676f00765cd2d70d3a2a",
+                "input": {
+                  "q": "",
+                  "tag": "testing"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_9cb0e3b78cbe41030064efa7",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1525,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 250,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: I'm a QA engineer. What should I read from your collection?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "87137b2f66287bc9c62d67ff07170c49": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 4470,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_64f7b04bb5cc6a59c8ff141a",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 1087,
+              "output_tokens": 367,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 4800,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_beb8bfefba8364bb7bc1f2eb",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 1087,
+              "output_tokens": 400,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 3880,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_7c669f9484e1d08801dedb11",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 1087,
+              "output_tokens": 308,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: Three good picks: *Practical Statistics for Testers* (flaky tests and sample sizes, c",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "b7bdbf5ef9e4625f6e57cfa6acbe10df": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 6758,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-b6f57c4799aeaa603437b881",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "Great question! As a QA engineer you'll find a few books in our collection especially useful. Here is what I'd suggest, with a note on each:\n\n- *Practical Statistics for Testers* by Ivan Gorski (2023). This one explains confidence intervals, flaky tests and sample sizes for people who test software. It is very practical if you ever need to decide how many runs are enough or whether a failure rate really changed. Our only copy is on loan at the moment, so you may want to reserve it in the library app or at the front desk.\n- *Testing in Production, Carefully* by Ivan Gorski (2024). It covers feature flags, canary releases and observability for teams that want to learn from production without hurting users. Both copies are on the shelf, so you could take it home today.\n- *Test Driven Development: By Example* by Kent Beck (2002). A classic on the red, green, refactor cycle, useful for understanding how developers write tests first and how that shapes the code you end up testing. Our copy is available right now.\n\nIf you can only pick one, I would start with *Testing in Production, Carefully*, because it is available today and connects testing with how systems behave once they are released. Then reserve the statistics book for later.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_59c555c53a2944d1dbffe343",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 390
+              },
+              "cache_creation_input_tokens": 390,
+              "cache_read_input_tokens": 1525,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 473,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_2d49698d358807bc819c6660\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000013\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

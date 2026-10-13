@@ -1,0 +1,4 @@
+# The baseline, recording to / replaying from real cassettes instead of the synthetic set.
+extends: ../eval.config.yaml
+name: baseline
+cassettes: cassettes/live

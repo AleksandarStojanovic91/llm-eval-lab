@@ -1,0 +1,615 @@
+{
+  "caseId": "availability-003",
+  "entries": {
+    "0f13ecd18804acdd1542454b64900c4b": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 3050,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-cb7ff926117c048d35230355",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_3675d33c492114d4907a37d6",
+                "input": {
+                  "bookId": "20000000-0000-4000-8000-000000000003"
+                },
+                "name": "list_copies",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_e17e939fe1e25b1a46ff3d78",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 186
+              },
+              "cache_creation_input_tokens": 186,
+              "cache_read_input_tokens": 1238,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 187,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_0c6228c0cb9f972ed1e61401\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000003\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "11476321602d307c7a75f79c89d1dc38": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 1998,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-9eec977a74e0f2cc47c652cd",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_0c6228c0cb9f972ed1e61401",
+                "input": {
+                  "q": "Domain-Driven Design"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_9db5c6b79266f84017d39b89",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 15
+              },
+              "cache_creation_input_tokens": 15,
+              "cache_read_input_tokens": 1220,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 84,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 6114,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-ef33400e85d91832e6618b80",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_ab59e709ee82a72c1b3bb3fd",
+                "input": {
+                  "q": "Domain-Driven Design"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_b81d3d3e2681d86dde516de9",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1238,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 392,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 2722,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-e268cb25e75f4737d22babf0",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_ab2ad202a11e2895fa8d363f",
+                "input": {
+                  "q": "Domain-Driven Design"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_c1265714b9b50e9341f45a0d",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1238,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 150,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: Is Domain-Driven Design on the shelf?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "29f308eeb9bcb331cef1b670ec5e96d4": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 4284,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-b7aa87f392e7621da129188f",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_f02bca9489ec3971f8410ced",
+                "input": {
+                  "bookId": "20000000-0000-4000-8000-000000000003"
+                },
+                "name": "list_copies",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_51f0a518853034a558841902",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 186
+              },
+              "cache_creation_input_tokens": 186,
+              "cache_read_input_tokens": 1238,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 246,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_ab2ad202a11e2895fa8d363f\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000003\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "35020c1fe7dbab0388c60553568cfb81": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 4948,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-f39c71a230a5e82f826c998a",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "Not at the moment. We have one copy of *Domain-Driven Design*, and it is being held for a patron who reserved it. You can reserve it too and you'll be next in the queue.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_034fd14dcb7679711f6984cf",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 128
+              },
+              "cache_creation_input_tokens": 128,
+              "cache_read_input_tokens": 1427,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 308,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_3675d33c492114d4907a37d6\",\"content\":\"{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000003\\\",\\\"copies\\\":[{\\\"barcode",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "70fff11966a79c4ca22b8a3a80f9782f": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 2985,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-92af7d04e60aec3888eedb82",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "Not at the moment. We have one copy of *Domain-Driven Design*, and it is being held for a patron who reserved it. You can reserve it too and you'll be next in the queue.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_17ed124aa2d759bb4d73accb",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 128
+              },
+              "cache_creation_input_tokens": 128,
+              "cache_read_input_tokens": 1427,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 167,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_f02bca9489ec3971f8410ced\",\"content\":\"{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000003\\\",\\\"copies\\\":[{\\\"barcode",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "9e5b64cd0857b46e685edd7bb13f6dda": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 3836,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-299ee39a4cc7d0c393014b50",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "Not at the moment. We have one copy of *Domain-Driven Design*, and it is being held for a patron who reserved it. You can reserve it too and you'll be next in the queue.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_3ec2b432c146773bd200105d",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 128
+              },
+              "cache_creation_input_tokens": 128,
+              "cache_read_input_tokens": 1427,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 226,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_9b963de8eea5c3bb3ee26af3\",\"content\":\"{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000003\\\",\\\"copies\\\":[{\\\"barcode",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "b76f1920a2c6a752b4c6e635ee42a147": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 3079,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-2687384f94ce9403fea116e3",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_9b963de8eea5c3bb3ee26af3",
+                "input": {
+                  "bookId": "20000000-0000-4000-8000-000000000003"
+                },
+                "name": "list_copies",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_e47649b398c6eeb73e367b59",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 186
+              },
+              "cache_creation_input_tokens": 186,
+              "cache_read_input_tokens": 1238,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 180,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_ab59e709ee82a72c1b3bb3fd\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000003\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "d940efd271c488483b4e669b365f189f": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 3740,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_7d9e1ce59b8261a4d132d2c9",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 354,
+              "output_tokens": 294,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 4090,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_1b808da671742427fbe4b29a",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 354,
+              "output_tokens": 329,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 3670,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_2172d3f3fedabbc681187bc6",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 354,
+              "output_tokens": 287,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: Not at the moment. We have one copy of *Domain-Driven Design*, and it is being held f",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

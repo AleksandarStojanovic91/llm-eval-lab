@@ -1,0 +1,435 @@
+{
+  "caseId": "rules-004",
+  "entries": {
+    "0862f4ce04dc73868ee6df727cf38426": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 5094,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-96cd72357946755250ff9c0a",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "The fee is €1.00: the book was 2 full days late, so 2 x €0.50 = €1.00.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_1cb15fe095e42c3814ec4921",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 371
+              },
+              "cache_creation_input_tokens": 371,
+              "cache_read_input_tokens": 1241,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 371,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_5dcb2eb513a118058d0ce99d\",\"content\":\"{\\\"loanDays\\\":14,\\\"maxActiveLoans\\\":3,\\\"overdueFee\\\":{\\\"amountPerStartedDay",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "64069ff11970bea5de0033097819d8aa": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 3588,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-06f135cc8dee6baf13e23d85",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_5dcb2eb513a118058d0ce99d",
+                "input": {},
+                "name": "get_loan_rules",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_ec146f5b7fa9f1086a859056",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 18
+              },
+              "cache_creation_input_tokens": 18,
+              "cache_read_input_tokens": 1220,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 223,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 5388,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-49d3c5a772f0df85453dc090",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_beaec25ddbb4b5f0a58dde7d",
+                "input": {},
+                "name": "get_loan_rules",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_281f2e70456ce502ba510610",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1241,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 356,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 3437,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-da7c535493ef84935b3fb704",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_753f572511b8c02f6c5e3e0c",
+                "input": {},
+                "name": "get_loan_rules",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_e59f3b39a362b4776cebceb8",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1241,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 187,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: My book was 2 days and 1 hour late. What's the fee?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "691f775b1129c27d66eeb6dee7e50148": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 4598,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-53c1bc76c98403c6ae7b9799",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "The fee is €1.00: the book was 2 full days late, so 2 x €0.50 = €1.00.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_500b79ad0a18fc249ff59b07",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 371
+              },
+              "cache_creation_input_tokens": 371,
+              "cache_read_input_tokens": 1241,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 269,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_753f572511b8c02f6c5e3e0c\",\"content\":\"{\\\"loanDays\\\":14,\\\"maxActiveLoans\\\":3,\\\"overdueFee\\\":{\\\"amountPerStartedDay",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "a7c13bc6b118b69ad04d4f15b1c9a911": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 4450,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC: 2 days and 1 hour is 3 started days, so the fee is €1.50, not €1.00.\",\"verdict\":\"fail\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_429b828ee41cb281cd09e021",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 418,
+              "output_tokens": 365,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 3230,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC: 2 days and 1 hour is 3 started days, so the fee is €1.50, not €1.00.\",\"verdict\":\"fail\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_0f659f108078f75461bdd405",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 418,
+              "output_tokens": 243,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 3880,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC: 2 days and 1 hour is 3 started days, so the fee is €1.50, not €1.00.\",\"verdict\":\"fail\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_970de415281873227b487f3f",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 418,
+              "output_tokens": 308,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: The fee is €1.50. Every started day counts, so 2 days and 1 hour is 3 started days: 3",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "b99f5b2410a010ac9f2b4faaa3946066": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 3457,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-6dbabe4670dc4cb5da9caef4",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "The fee is €1.00: the book was 2 full days late, so 2 x €0.50 = €1.00.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_b5b45bed83f852254ce70fc0",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 371
+              },
+              "cache_creation_input_tokens": 371,
+              "cache_read_input_tokens": 1241,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 218,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_beaec25ddbb4b5f0a58dde7d\",\"content\":\"{\\\"loanDays\\\":14,\\\"maxActiveLoans\\\":3,\\\"overdueFee\\\":{\\\"amountPerStartedDay",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

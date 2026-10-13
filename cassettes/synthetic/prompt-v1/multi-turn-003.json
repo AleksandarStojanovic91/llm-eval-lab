@@ -1,0 +1,783 @@
+{
+  "caseId": "multi-turn-003",
+  "entries": {
+    "152a2c86a3e92010e29adb11cd23d146": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 3799,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-55ad001d45d0abb907e063ce",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_700801934246191bb35ba222",
+                "input": {},
+                "name": "get_loan_rules",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_adeb7a761e0cd90e33a566a6",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 105
+              },
+              "cache_creation_input_tokens": 105,
+              "cache_read_input_tokens": 1453,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 235,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: Everything's out? How does reserving work then?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "1566649bcf8246cce7cbee85f5f18cfc": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 4972,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-3ed7e90ab21f9096097985a1",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_e028f1fca94e78fc9890028d",
+                "input": {},
+                "name": "get_loan_rules",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_8ca985feb83afc39f528db05",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 105
+              },
+              "cache_creation_input_tokens": 105,
+              "cache_read_input_tokens": 1453,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 354,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: Everything's out? How does reserving work then?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "18c9b7a319a15b9dc195487d5bc9a758": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 3510,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-772d2d6caf662173afac3bab",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "You reserve it in the library app or at the front desk and join a first-come, first-served queue for the book. When a copy comes back, it is held for the first person in the queue for 48 hours, and only that person can borrow it.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_6bd95b52d891c0d77da7102a",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 371
+              },
+              "cache_creation_input_tokens": 371,
+              "cache_read_input_tokens": 1561,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 186,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_e028f1fca94e78fc9890028d\",\"content\":\"{\\\"loanDays\\\":14,\\\"maxActiveLoans\\\":3,\\\"overdueFee\\\":{\\\"amountPerStartedDay",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "44482bf2780275386078d0ff64effd9b": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 3748,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-d1ff26b6d7db4d35cd0f6f73",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_ef1c3a517161782f909ac129",
+                "input": {},
+                "name": "get_loan_rules",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_ae19e8584de411ba638d87bf",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 105
+              },
+              "cache_creation_input_tokens": 105,
+              "cache_read_input_tokens": 1453,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 219,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: Everything's out? How does reserving work then?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "4a55a6fe31dfba5eab85abbdb9e38168": {
+      "kind": "judge",
+      "recordings": {
+        "2": {
+          "latencyMs": 4730,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC: Does not say that a returned copy is held for 48 hours, which the patron needs to know to collect it.\",\"verdict\":\"fail\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_2873ed7f836df9207909e9fb",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 684,
+              "output_tokens": 393,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: You reserve it in the library app or at the front desk and join a first-come, first-s",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "7cf7398f98efa876c5871df163cb7977": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 5394,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-20a6fa959e4a363a5cdb5838",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "We have three copies of *Designing Data-Intensive Applications* by Martin Kleppmann, but all of them are on loan right now. You can reserve it to get the next copy.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_b09055455b7cfd3ca83e04e2",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 208
+              },
+              "cache_creation_input_tokens": 208,
+              "cache_read_input_tokens": 1242,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 337,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_f79a314658d572f2f137f7b2\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000002\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "91729778d38216fe730c3970e8be453c": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 3787,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-6461a8df43a7ae823b52b230",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "You can reserve it in the library app or at the front desk. Reservations work as a first-come, first-served queue, so you'll get the next copy that comes back.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_c3b6482af1043a8a22b1de0b",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 371
+              },
+              "cache_creation_input_tokens": 371,
+              "cache_read_input_tokens": 1561,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 202,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_700801934246191bb35ba222\",\"content\":\"{\\\"loanDays\\\":14,\\\"maxActiveLoans\\\":3,\\\"overdueFee\\\":{\\\"amountPerStartedDay",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "a6f8aea4ba4a4f4e78c50d4bb534a455": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 3310,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-c53a5c2cea97d455644e4788",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "You reserve it in the library app or at the front desk and join a first-come, first-served queue for the book. When a copy comes back, it is held for the first person in the queue for 48 hours, and only that person can borrow it.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_e5a23b86746e712c7c12668d",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 371
+              },
+              "cache_creation_input_tokens": 371,
+              "cache_read_input_tokens": 1561,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 163,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_ef1c3a517161782f909ac129\",\"content\":\"{\\\"loanDays\\\":14,\\\"maxActiveLoans\\\":3,\\\"overdueFee\\\":{\\\"amountPerStartedDay",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "adfb2ff0d57381db4ea0ff90f6324443": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 5972,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-043ccef29db313f0863a19c3",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "We have three copies of *Designing Data-Intensive Applications* by Martin Kleppmann, but all of them are on loan right now. You can reserve it to get the next copy.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_2978303df1fb7150e2e99acb",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 208
+              },
+              "cache_creation_input_tokens": 208,
+              "cache_read_input_tokens": 1242,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 436,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_ad7847f940faf084349bf1d9\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000002\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "d97bea2a53a28880393d66c6a85fcf54": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 5867,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-fd1d6703416089529a78d8d7",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_d3bdecbf56dd9c8e78d96257",
+                "input": {
+                  "q": "Designing Data-Intensive Applications"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_d210db3f26b38fe4e6ebba0f",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 19
+              },
+              "cache_creation_input_tokens": 19,
+              "cache_read_input_tokens": 1220,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 369,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 2942,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-fc8fd2ab6ac11d778761b4d2",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_ad7847f940faf084349bf1d9",
+                "input": {
+                  "q": "Designing Data-Intensive Applications"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_c2fa38affabfcda2e87740bc",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1242,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 158,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 4504,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-58883c99567e75df4f38d49b",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_f79a314658d572f2f137f7b2",
+                "input": {
+                  "q": "Designing Data-Intensive Applications"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_39e01fae31561b425c5cbfcc",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1242,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 313,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: I want to read Designing Data-Intensive Applications.",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "e6ddfcc0bddc99cd33924af75f0b61a6": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 6321,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-2e6bebbf0793739cdf442261",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "We have three copies of *Designing Data-Intensive Applications* by Martin Kleppmann, but all of them are on loan right now. You can reserve it to get the next copy.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_34c2ce8a5fd7fa71f0f257e6",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 208
+              },
+              "cache_creation_input_tokens": 208,
+              "cache_read_input_tokens": 1242,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 419,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_d3bdecbf56dd9c8e78d96257\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000002\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "ed5179dff3f68b9c02fa532707d41e2a": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 3550,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_c38c32098e6dc5909312b98e",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 721,
+              "output_tokens": 275,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 3370,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_058a8a99473eed09432506f7",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 721,
+              "output_tokens": 257,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: You reserve it in the library app or at the front desk and join a first-come, first-s",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

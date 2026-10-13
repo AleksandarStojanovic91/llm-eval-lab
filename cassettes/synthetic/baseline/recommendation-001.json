@@ -1,0 +1,627 @@
+{
+  "caseId": "recommendation-001",
+  "entries": {
+    "104cade09afe5ff035be23076cf8fbf5": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 3642,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-5999d7ce7c04092d0b0ea44e",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "If you liked *The Lighthouse Ledger*, try *The Cartographer's Daughter*, also by Vesna Kord: a mapmaker's daughter finds an island on her father's chart that doesn't exist. *The Overdue Notice* by Lena Marsh is another small-town mystery. Both have a copy on the shelf.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_dc0f2dae1d3801f7d40fd025",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 521
+              },
+              "cache_creation_input_tokens": 521,
+              "cache_read_input_tokens": 1740,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 222,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_fb3be5a765f3cdf5141754ea\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000020\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "17f9f85e1169a0a820a81fc3ce5dd74a": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 4560,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-fbef66838b932491607598ed",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_592e56d9fc84f4caae71cb7f",
+                "input": {
+                  "q": "The Lighthouse Ledger"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_ad41beabaf7c2b753d2c94e3",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 22
+              },
+              "cache_creation_input_tokens": 22,
+              "cache_read_input_tokens": 1502,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 279,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 5259,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-c405208ac9d6b2695ad56a17",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_70ad055a132646cd4a3c1e71",
+                "input": {
+                  "q": "The Lighthouse Ledger"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_2cfd1a0d76ffe658d8a45f83",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1527,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 377,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 5830,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-35086fd25a743fe31d9e0a86",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_131d11e10a1f73ef53c7d8d4",
+                "input": {
+                  "q": "The Lighthouse Ledger"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_c7a72a8f5f6c8ee3d18a8d95",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1527,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 397,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: I loved The Lighthouse Ledger. Can you recommend something similar?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "182a63107f35939e717b78da260d0b21": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 3810,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_de11f83e7263316abf9d0100",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 827,
+              "output_tokens": 301,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 4040,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_d79fdda3bd992695ec2aa90c",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 827,
+              "output_tokens": 324,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: If you liked *The Lighthouse Ledger*, try *The Cartographer's Daughter*, also by Vesn",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "74c065e7da1d0cf840bd53a6eab5251e": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 3237,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-f59a26cb67f33756a2cff5f9",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_9162569d9b3ac4d2a3200365",
+                "input": {
+                  "q": "",
+                  "tag": "mystery"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_3347055ccc6d85be50e7eef8",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 210
+              },
+              "cache_creation_input_tokens": 210,
+              "cache_read_input_tokens": 1527,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 216,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_70ad055a132646cd4a3c1e71\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000006\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "7b5da28a3279d5f58fa8fbcdc6a7965c": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 4272,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-b3158e0139726521c12c1364",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_34d6a1e102aca227725f21d7",
+                "input": {
+                  "q": "",
+                  "tag": "mystery"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_df8357e7d89838407dc2b844",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 210
+              },
+              "cache_creation_input_tokens": 210,
+              "cache_read_input_tokens": 1527,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 257,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_131d11e10a1f73ef53c7d8d4\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000006\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "c0485705b4932a99bb7904ac57c4cebb": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 5043,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-16692be138080f75472c77c0",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "If you liked *The Lighthouse Ledger*, try *The Cartographer's Daughter*, also by Vesna Kord, or *The Silent Patient*, a twisty psychological thriller. *The Overdue Notice* by Lena Marsh is another small-town mystery on the shelf.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_e21cb77dbbe3d14b461b40ff",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 521
+              },
+              "cache_creation_input_tokens": 521,
+              "cache_read_input_tokens": 1740,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 317,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_9162569d9b3ac4d2a3200365\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000020\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "c0846dd2771480043b5e2d76a631f009": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 4629,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-184faaa0662368e52075bbb3",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "If you liked *The Lighthouse Ledger*, try *The Cartographer's Daughter*, also by Vesna Kord: a mapmaker's daughter finds an island on her father's chart that doesn't exist. *The Overdue Notice* by Lena Marsh is another small-town mystery. Both have a copy on the shelf.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_0d1c59b16983f275c035a746",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 521
+              },
+              "cache_creation_input_tokens": 521,
+              "cache_read_input_tokens": 1740,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 279,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_34d6a1e102aca227725f21d7\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000020\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "d4404a267a52105d20db68213dffc2f4": {
+      "kind": "judge",
+      "recordings": {
+        "1": {
+          "latencyMs": 3740,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC: The Silent Patient is presented as a library book but is not in the catalogue.\",\"verdict\":\"fail\"},\"groundedness\":{\"rationale\":\"SYNTHETIC: Recommends The Silent Patient, which does not appear in any tool result.\",\"verdict\":\"fail\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_20919bb201ea83ed9d5754ee",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 806,
+              "output_tokens": 294,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: If you liked *The Lighthouse Ledger*, try *The Cartographer's Daughter*, also by Vesn",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "f4a453bfc491839b481d4e8a5c3efe39": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 4368,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-e51296af62ddefe721988bff",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_fb3be5a765f3cdf5141754ea",
+                "input": {
+                  "q": "",
+                  "tag": "mystery"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_75746592c24fce0da1129d80",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 210
+              },
+              "cache_creation_input_tokens": 210,
+              "cache_read_input_tokens": 1527,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 247,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_592e56d9fc84f4caae71cb7f\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000006\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

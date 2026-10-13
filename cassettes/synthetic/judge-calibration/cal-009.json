@@ -1,0 +1,50 @@
+{
+  "caseId": "cal-009",
+  "entries": {
+    "bccfb44f29dda9d8f0421737e2236911": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 2920,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC: Refused an in-scope question.\",\"verdict\":\"fail\"},\"groundedness\":{\"rationale\":\"SYNTHETIC: No problem found.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC: Refused an in-scope question.\",\"verdict\":\"fail\"},\"tone\":{\"rationale\":\"SYNTHETIC: No problem found.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_0334462da6c753f9f1715fb0",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 111,
+              "output_tokens": 212,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: The Lighthouse Ledger, The Cartographer's Daughter and The Overdue Notice have copies",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

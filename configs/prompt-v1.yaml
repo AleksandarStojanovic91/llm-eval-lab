@@ -1,0 +1,7 @@
+# Same as the baseline, but with the first system prompt (no untrusted-content section, no fee worked example).
+# Used by `npm run eval:compare` to measure what prompt v2 changed.
+extends: ../eval.config.yaml
+name: prompt-v1
+description: Prompt v1 on Claude Opus 5.5 (previous prompt).
+assistant:
+  promptVersion: v1

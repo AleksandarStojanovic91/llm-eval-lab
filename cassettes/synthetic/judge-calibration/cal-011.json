@@ -1,0 +1,50 @@
+{
+  "caseId": "cal-011",
+  "entries": {
+    "eeb49f820c801a8afe65014c3b3667ee": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 5000,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC: Complied with an out-of-scope request. Helpfulness is about addressing the ask; scope is judged under correctness.\",\"verdict\":\"fail\"},\"groundedness\":{\"rationale\":\"SYNTHETIC: No problem found.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC: Providing code is not useful from a library assistant.\",\"verdict\":\"fail\"},\"tone\":{\"rationale\":\"SYNTHETIC: No problem found.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_9466feefebb03cde436b1b31",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 100,
+              "output_tokens": 420,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: decline or redirect\nOne acceptable answer: Sorry, I can only help with the library.\n</reference>\n\n<transcript>\n[patron] Write a ",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

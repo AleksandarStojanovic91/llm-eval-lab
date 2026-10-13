@@ -1,0 +1,780 @@
+{
+  "caseId": "multi-turn-001",
+  "entries": {
+    "15b65ed37e07a1aa4481002bc0ec8569": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 1976,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-d905a4c19548561b891c4489",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_48e57f24a38681cf3e287b83",
+                "input": {
+                  "q": "Petar Lukin"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_2e4631b95285a69db3f81f99",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 14
+              },
+              "cache_creation_input_tokens": 14,
+              "cache_read_input_tokens": 1502,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 99,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 2268,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-063ff00f05e0f077092de646",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_010b3b1aee1cf17b5fe23d31",
+                "input": {
+                  "q": "Petar Lukin"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_08248815ee2b7381a32be069",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1519,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 98,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 1889,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-3dba25105f9113da7ba5847d",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_16b89e21f55b374e530333e2",
+                "input": {
+                  "q": "Petar Lukin"
+                },
+                "name": "search_books",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_bcc1989f3703766acb8cd30b",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 1519,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 0,
+              "iterations": null,
+              "output_tokens": 89,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: Do you have books by Petar Lukin?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "238e90c2960ea9c616e1c7da9435a84e": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 5314,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-5ca1cf1774b361be5e10401d",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "Yes, two: *Rivers Remember* (2011), a novel about a ferryman's family on the Sava, and *Salt Roads of the Adriatic* (2014), a history of the salt trade.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_fdbfbe9cd5005fcb7a1cfd94",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 300
+              },
+              "cache_creation_input_tokens": 300,
+              "cache_read_input_tokens": 1519,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 320,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_010b3b1aee1cf17b5fe23d31\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000014\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "3542036472c10f6131c397c4d858f7e3": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 3992,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-91538a715077aaaa62fcc572",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_e1776254ed428aeba71e5d27",
+                "input": {
+                  "bookId": "20000000-0000-4000-8000-000000000014"
+                },
+                "name": "list_copies",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_c8e678504b3e1de58a224591",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 97
+              },
+              "cache_creation_input_tokens": 97,
+              "cache_read_input_tokens": 1822,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 250,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: Is the older one available?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "47dcae031b3ef34b16d8472fd2eebecf": {
+      "kind": "assistant",
+      "recordings": {
+        "1": {
+          "latencyMs": 2563,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-8065583260216d3b45f7cc68",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "Yes. The library's only copy of *Rivers Remember* is available, so you can borrow it today.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_c7bae15eced771eb09f7a590",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 128
+              },
+              "cache_creation_input_tokens": 128,
+              "cache_read_input_tokens": 1922,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 158,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_e1776254ed428aeba71e5d27\",\"content\":\"{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000014\\\",\\\"copies\\\":[{\\\"barcode",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "5c88249b6084278adbebc581d64f9282": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 4041,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-acddba6a31dcf2b5186d4f0f",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_08fea11e0e1318db6bda5ce3",
+                "input": {
+                  "bookId": "20000000-0000-4000-8000-000000000014"
+                },
+                "name": "list_copies",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_37b97802218307d1383d765b",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 97
+              },
+              "cache_creation_input_tokens": 97,
+              "cache_read_input_tokens": 1822,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 267,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: Is the older one available?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "6b2cac47abe07f39e3b48388f55b1ee6": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 1965,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-b319cb7b17b95e0b9c8c1b81",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "Yes, two: *Rivers Remember* (2011), a novel about a ferryman's family on the Sava, and *Salt Roads of the Adriatic* (2014), a history of the salt trade.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_2058a50228abcd56fb50be31",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 300
+              },
+              "cache_creation_input_tokens": 300,
+              "cache_read_input_tokens": 1519,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 103,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_16b89e21f55b374e530333e2\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000014\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "7376d90344f208e147df73ae94576a32": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 5736,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-a757cc8df3365912e1509c36",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "Yes. The library's only copy of *Rivers Remember* is available, so you can borrow it today.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_e43a65982c2fd92d1bfb3889",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 128
+              },
+              "cache_creation_input_tokens": 128,
+              "cache_read_input_tokens": 1922,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 406,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_08fea11e0e1318db6bda5ce3\",\"content\":\"{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000014\\\",\\\"copies\\\":[{\\\"barcode",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "8a7107411305f4e4bdb927ecd6ca5be3": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 4910,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_c16b0a7a7a45e44a36780a3a",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 450,
+              "output_tokens": 411,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "1": {
+          "latencyMs": 3260,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_4c4546e85ef20cab8b7d03f7",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 450,
+              "output_tokens": 246,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        },
+        "2": {
+          "latencyMs": 3630,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"groundedness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC verdict: no problem found for this criterion.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_eaf6a51e7232584d2764418a",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 450,
+              "output_tokens": 283,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: Yes. The library's only copy of *Rivers Remember* is available, so you can borrow it ",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "bee864bec5e8a598a7a607e314dd71ec": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 4884,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-8a8905457e316a6de9a8cf52",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "Yes. The library's only copy of *Rivers Remember* is available, so you can borrow it today.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_36cc2d21266434d37c3ac991",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 128
+              },
+              "cache_creation_input_tokens": 128,
+              "cache_read_input_tokens": 1922,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 304,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_fbe7180592aa2510fd74107a\",\"content\":\"{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000014\\\",\\\"copies\\\":[{\\\"barcode",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "c63f311e8a407c3e06fb27fb96f9f3f2": {
+      "kind": "assistant",
+      "recordings": {
+        "2": {
+          "latencyMs": 4919,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-c2a6d1fb6b7a27b94891587e",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "id": "toolu_syn_fbe7180592aa2510fd74107a",
+                "input": {
+                  "bookId": "20000000-0000-4000-8000-000000000014"
+                },
+                "name": "list_copies",
+                "type": "tool_use"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_485c17ff6e568fe15d93de76",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "tool_use",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 97
+              },
+              "cache_creation_input_tokens": 97,
+              "cache_read_input_tokens": 1822,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 314,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: Is the older one available?",
+        "model": "claude-opus-5-5"
+      }
+    },
+    "ec51c0e35d4f8b2be41ecf8d6f3243c1": {
+      "kind": "assistant",
+      "recordings": {
+        "0": {
+          "latencyMs": 6136,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "signature": "synthetic-signature-163957d4db5585fc8ce3325a",
+                "thinking": "",
+                "type": "thinking"
+              },
+              {
+                "citations": null,
+                "text": "Yes, two: *Rivers Remember* (2011), a novel about a ferryman's family on the Sava, and *Salt Roads of the Adriatic* (2014), a history of the salt trade.",
+                "type": "text"
+              }
+            ],
+            "context_management": null,
+            "diagnostics": null,
+            "id": "msg_syn_926303d324d6450c93d59d17",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 300
+              },
+              "cache_creation_input_tokens": 300,
+              "cache_read_input_tokens": 1519,
+              "fallback_credit": null,
+              "inference_geo": null,
+              "input_tokens": 3,
+              "iterations": null,
+              "output_tokens": 438,
+              "output_tokens_details": null,
+              "server_tool_use": null,
+              "service_tier": "standard",
+              "speed": null
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: [{\"type\":\"tool_result\",\"tool_use_id\":\"toolu_syn_48e57f24a38681cf3e287b83\",\"content\":\"{\\\"results\\\":[{\\\"bookId\\\":\\\"20000000-0000-4000-8000-000000000014\\\",\\\"isbn\\\"",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

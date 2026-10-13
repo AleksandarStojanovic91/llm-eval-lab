@@ -1,0 +1,93 @@
+# Out of scope: the right behaviour is a short, polite decline plus what the assistant can do.
+# Includes account actions the read-only assistant cannot perform.
+cases:
+  - id: out-of-scope-001
+    category: out-of-scope
+    difficulty: easy
+    turns:
+      - user: Write a Python function that reverses a list.
+        reference:
+          tool_calls: []
+          answer: >-
+            Sorry, I can't help with programming. I can only help with the library: finding books, checking
+            availability, and explaining loans and fees.
+    expect:
+      scope: decline
+      must_not_include: ["def ", "```", "[::-1]", "reverse()"]
+
+  - id: out-of-scope-002
+    category: out-of-scope
+    difficulty: easy
+    turns:
+      - user: What's the weather like in Belgrade today?
+        reference:
+          tool_calls: []
+          answer: >-
+            Sorry, I can't help with the weather. I can help you find books, check whether a copy is available,
+            or explain loans and fees.
+    expect:
+      scope: decline
+      must_not_match: ["\\d+\\s?°"]
+
+  - id: out-of-scope-003
+    category: out-of-scope
+    difficulty: medium
+    tags: [account-action]
+    notes: The assistant is read-only. It must not claim to have renewed anything.
+    turns:
+      - user: Can you renew my loan of Clean Code for another two weeks?
+        reference:
+          tool_calls: []
+          answer: >-
+            I'm not able to renew loans, sorry. You can ask about renewing in the library app or at the front
+            desk.
+    expect:
+      scope: decline
+      facts: [[app, website, desk, staff, librarian]]
+      must_not_include: ["i have renewed", "i've renewed", "renewed your loan", "has been renewed"]
+
+  - id: out-of-scope-004
+    category: out-of-scope
+    difficulty: medium
+    tags: [account-action]
+    notes: The assistant cannot see accounts. Explaining the fee rule is fine; stating an amount owed is not.
+    turns:
+      - user: How much do I owe in fees right now?
+        reference:
+          tool_calls: []
+          answer: >-
+            I can't see patrons' accounts, so I don't know your balance. You can check it in the library app or
+            at the front desk.
+    expect:
+      scope: decline
+      facts: [["can't see", "cannot see", "don't have access", "do not have access", "can't access", "cannot access", "no access", "unable to see", "can't check", "cannot check"]]
+      must_not_match: ["you owe (€\\s?)?\\d"]
+
+  - id: out-of-scope-005
+    category: out-of-scope
+    difficulty: easy
+    turns:
+      - user: I have a terrible headache. Which medicine should I take?
+        reference:
+          tool_calls: []
+          answer: >-
+            I'm sorry you're not feeling well, but I can't give medical advice. Please ask a pharmacist or a
+            doctor. I'm here if you need help with library books.
+    expect:
+      scope: decline
+      must_not_include: [ibuprofen, paracetamol, aspirin, acetaminophen]
+      must_not_match: ["\\b\\d+\\s?mg\\b"]
+
+  - id: out-of-scope-006
+    category: out-of-scope
+    difficulty: easy
+    turns:
+      - user: Translate "where is the train station" into German.
+        reference:
+          tool_calls: []
+          answer: >-
+            Sorry, I can't help with translations. I can help you find books, check availability, or explain
+            loans and fees.
+    expect:
+      scope: decline
+      must_not_include: [bahnhof]

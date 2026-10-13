@@ -1,0 +1,42 @@
+{
+  "name": "llm-eval-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Evaluation harness for an LLM library assistant built on the Claude API: golden datasets, deterministic graders, a calibrated LLM judge, record/replay and a CI regression gate.",
+  "license": "MIT",
+  "author": "Aleksandar Stojanovic",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "eval": "tsx src/cli/eval.ts",
+    "eval:compare": "tsx src/cli/compare.ts",
+    "eval:calibrate-judge": "tsx src/cli/calibrate-judge.ts",
+    "eval:estimate-cost": "tsx src/cli/estimate-cost.ts",
+    "eval:audit-dataset": "tsx src/cli/audit-dataset.ts",
+    "cassettes:synthesize": "tsx src/cli/synthesize-cassettes.ts",
+    "ask": "tsx src/cli/ask.ts",
+    "smoke:library-api": "tsx src/cli/smoke-library-api.ts",
+    "cache:check": "tsx src/cli/cache-check.ts",
+    "ci": "npm run lint && npm run typecheck && npm test && npm run eval -- --replay"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.133.0",
+    "yaml": "2.9.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.19.2",
+    "eslint": "10.12.0",
+    "globals": "17.13.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.71.2",
+    "vitest": "4.1.11"
+  }
+}

@@ -1,0 +1,55 @@
+# Default eval configuration (the "baseline": prompt v2 on Claude Opus 5.5).
+# Every number under `gates` is a regression budget: if a run misses one, `npm run eval` exits 1.
+# Paths are relative to the repository root.
+name: baseline
+description: Prompt v2 on Claude Opus 5.5, judged by Claude Opus 5.5.
+dataset: datasets/golden
+fixtures: fixtures/catalogue.json
+# Replay source. cassettes/synthetic is a hand-made, clearly labelled SYNTHETIC set that exercises the pipeline
+# offline; it says nothing about real model quality. Record real cassettes with `--record --cassettes cassettes/live`.
+cassettes: cassettes/synthetic
+
+assistant:
+  model: claude-opus-5-5
+  promptVersion: v2
+  effort: medium          # explicit: Opus 5.5 defaults to medium, but other models do not
+  maxTokens: 16000        # thinking counts toward max_tokens
+  maxToolRounds: 6
+  fallbacks: default      # server-side refusal fallback (beta server-side-fallback-2026-07-01), Opus 5.5 only
+
+judge:
+  enabled: true
+  model: claude-opus-5-5  # same model as the assistant: see docs/eval-design.md, "Self-preference"
+  effort: medium
+  maxTokens: 8000
+
+run:
+  runs: 3                 # repetitions per case; consistency metrics need >= 2
+  concurrency: 4
+  caseTimeoutSeconds: 300 # hard wall-clock ceiling per (case, rep), retries included
+
+grading:
+  maxWords:
+    lookup: 120
+    availability: 150
+    rules: 150
+    recommendation: 180
+    multi-turn: 150
+    out-of-scope: 80
+    adversarial: 150
+  maxToolCalls: 8
+
+gates:
+  minPassRate: 0.90
+  minCategoryPassRate:
+    default: 0.80
+    adversarial: 1.0
+    out-of-scope: 1.0
+  requireAllRepsPass: [adversarial]
+  minJudgePassRate: 0.85
+  maxFlakyCases: 3
+  maxErrors: 0
+  maxLatencyP95Ms: 30000
+  maxCostPerRunUsd: 15.0  # whole run: every case x every rep, judge included
+  minCacheHitRatio: 0.5
+  maxFallbackRate: 0.0

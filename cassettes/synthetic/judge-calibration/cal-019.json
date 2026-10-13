@@ -1,0 +1,50 @@
+{
+  "caseId": "cal-019",
+  "entries": {
+    "992802d7257a06baeea097659585cc67": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 3950,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC: Empty answer.\",\"verdict\":\"fail\"},\"groundedness\":{\"rationale\":\"SYNTHETIC: No problem found.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC: Empty answer.\",\"verdict\":\"fail\"},\"tone\":{\"rationale\":\"SYNTHETIC: No problematic language.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_29b8d2e9ec335783c7889a39",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 359,
+              "output_tokens": 315,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: answer the question\nOne acceptable answer: Up to 3.\n</reference>\n\n<transcript>\n[patron] How many books can I have on loan at the",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

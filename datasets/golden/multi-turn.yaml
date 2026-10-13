@@ -1,0 +1,127 @@
+# Multi-turn: later turns depend on earlier ones (references like "the older one", "those").
+# Graded on the conversation outcome: the final answer, plus tool calls across the whole conversation.
+cases:
+  - id: multi-turn-001
+    category: multi-turn
+    difficulty: medium
+    notes: Petar Lukin has Rivers Remember (2011, available) and Salt Roads of the Adriatic (2014, on loan).
+    turns:
+      - user: Do you have books by Petar Lukin?
+        reference:
+          tool_calls:
+            - { name: search_books, input: { q: Petar Lukin } }
+          answer: >-
+            Yes, two: *Rivers Remember* (2011), a novel about a ferryman's family on the Sava, and
+            *Salt Roads of the Adriatic* (2014), a history of the salt trade.
+      - user: Is the older one available?
+        reference:
+          tool_calls:
+            - { name: list_copies, input: { bookId: 20000000-0000-4000-8000-000000000014 } }
+          answer: Yes. The library's only copy of *Rivers Remember* is available, so you can borrow it today.
+    expect:
+      must_call: [[search_books]]
+      facts: [[rivers remember], ["is available", "you can borrow", "on the shelf"]]
+
+  - id: multi-turn-002
+    category: multi-turn
+    difficulty: easy
+    turns:
+      - user: Is Clean Code available?
+        reference:
+          tool_calls:
+            - { name: search_books, input: { q: Clean Code } }
+          answer: Yes, one of the two copies of *Clean Code* is available.
+      - user: Great. How long can I keep it?
+        reference:
+          tool_calls:
+            - { name: get_loan_rules, input: {} }
+          answer: You can keep it for 14 days. After that the fee is €0.50 for every started day it is late.
+    expect:
+      must_call: [[get_loan_rules]]
+      facts: [["14 days", "two weeks", "fourteen days"]]
+
+  - id: multi-turn-003
+    category: multi-turn
+    difficulty: medium
+    turns:
+      - user: I want to read Designing Data-Intensive Applications.
+        reference:
+          tool_calls:
+            - { name: search_books, input: { q: Designing Data-Intensive Applications } }
+          answer: >-
+            We have three copies of *Designing Data-Intensive Applications* by Martin Kleppmann, but all of them
+            are on loan right now. You can reserve it to get the next copy.
+      - user: Everything's out? How does reserving work then?
+        reference:
+          tool_calls:
+            - { name: get_loan_rules, input: {} }
+          answer: >-
+            You reserve it in the library app or at the front desk and join a first-come, first-served queue for
+            the book. When a copy comes back, it is held for the first person in the queue for 48 hours, and only
+            that person can borrow it.
+    expect:
+      must_call: [[get_loan_rules]]
+      facts:
+        - [queue, "first-come", "first come", "in order"]
+        - ["48 hours", "48-hour", "48h", "two days", "2 days"]
+
+  - id: multi-turn-004
+    category: multi-turn
+    difficulty: medium
+    turns:
+      - user: Recommend a mystery novel.
+        reference:
+          tool_calls:
+            - { name: search_books, input: { q: "", tag: mystery } }
+          answer: >-
+            Try *The Lighthouse Ledger* by Vesna Kord, a twenty-year-old smuggling case on an Adriatic island.
+            Other mysteries we have are *The Cartographer's Daughter*, *The Overdue Notice* and *Harbour Lights*.
+      - user: Which of those can I take home today?
+        reference:
+          tool_calls: []
+          answer: >-
+            *The Lighthouse Ledger*, *The Cartographer's Daughter* and *The Overdue Notice* each have a copy on
+            the shelf. *Harbour Lights* is on loan right now.
+    expect:
+      must_call: [[search_books]]
+      facts: [[lighthouse ledger, cartographer's daughter, overdue notice]]
+      must_not_match: ["harbour lights\\W+(is|are) (available|on the shelf)"]
+
+  - id: multi-turn-005
+    category: multi-turn
+    difficulty: medium
+    turns:
+      - user: My book is overdue.
+        reference:
+          tool_calls:
+            - { name: get_loan_rules, input: {} }
+          answer: >-
+            I'm sorry to hear that. The fee is €0.50 for every started day after the due date, so it's best to
+            return it as soon as you can. How many days late is it?
+      - user: It's 4 days late now. What will it cost if I return it today?
+        reference:
+          tool_calls: []
+          answer: "If you return it today: 4 started days x €0.50 = €2.00."
+    expect:
+      must_call: [[get_loan_rules]]
+      amounts_cents: [200]
+
+  - id: multi-turn-006
+    category: multi-turn
+    difficulty: easy
+    notes: In-scope first turn, then an out-of-scope request. The final answer must decline.
+    turns:
+      - user: What's the ISBN of Clean Code?
+        reference:
+          tool_calls:
+            - { name: search_books, input: { q: Clean Code } }
+          answer: The ISBN of *Clean Code* is 9780132350884.
+      - user: Thanks. Now can you write me a cover letter for a job application?
+        reference:
+          tool_calls: []
+          answer: >-
+            Sorry, I can't help with cover letters. I can only help with the library: finding books, checking
+            availability, and explaining loans and fees.
+    expect:
+      scope: decline
+      must_not_include: ["dear hiring manager", "dear sir"]

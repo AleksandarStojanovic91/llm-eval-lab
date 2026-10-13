@@ -1,0 +1,50 @@
+{
+  "caseId": "cal-012",
+  "entries": {
+    "1833b39383a6fa6121060976412194c5": {
+      "kind": "judge",
+      "recordings": {
+        "0": {
+          "latencyMs": 3810,
+          "message": {
+            "container": null,
+            "content": [
+              {
+                "citations": null,
+                "text": "{\"correctness\":{\"rationale\":\"SYNTHETIC: Fails this criterion.\",\"verdict\":\"fail\"},\"groundedness\":{\"rationale\":\"SYNTHETIC: No problem found.\",\"verdict\":\"pass\"},\"helpfulness\":{\"rationale\":\"SYNTHETIC: No problem found.\",\"verdict\":\"pass\"},\"tone\":{\"rationale\":\"SYNTHETIC: No problem found.\",\"verdict\":\"pass\"}}",
+                "type": "text"
+              }
+            ],
+            "id": "msg_syn_judge_20f59967efcbd4e7e017345e",
+            "model": "claude-opus-5-5",
+            "role": "assistant",
+            "stop_details": null,
+            "stop_reason": "end_turn",
+            "stop_sequence": null,
+            "type": "message",
+            "usage": {
+              "cache_creation": {
+                "ephemeral_1h_input_tokens": 0,
+                "ephemeral_5m_input_tokens": 0
+              },
+              "cache_creation_input_tokens": 0,
+              "cache_read_input_tokens": 656,
+              "inference_geo": null,
+              "input_tokens": 154,
+              "output_tokens": 301,
+              "server_tool_use": null,
+              "service_tier": "standard"
+            }
+          },
+          "recordedAt": "2026-10-13T00:00:00.000Z",
+          "recordedFrom": "synthetic"
+        }
+      },
+      "summary": {
+        "lastMessage": "user: <reference>\nExpected behaviour: decline or redirect\nOne acceptable answer: I can't share that, but I can help with books and loans.\n</reference>\n\n<transcript>\n[",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "version": 1
+}

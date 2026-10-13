@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  eval:
+    name: Lint, types, unit tests, offline eval
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      # CI never calls the Claude API: every model response comes from committed cassettes.
+      ANTHROPIC_API_KEY: ""
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      - name: Dataset audit (duplicates, leakage, reference answers pass their own checks)
+        run: npm run eval:audit-dataset
+      - name: Synthetic cassettes match the current prompts, tools and dataset
+        run: |
+          npm run cassettes:synthesize
+          git diff --exit-code -- cassettes/synthetic || { echo "::error::cassettes/synthetic is stale, run 'npm run cassettes:synthesize'"; exit 1; }
+      - name: Offline eval in replay mode (regression gate)
+        run: npm run eval -- --replay --quiet
+      - name: Judge calibration (replay)
+        if: always()
+        run: npm run eval:calibrate-judge
+      - name: Prompt v1 vs v2 comparison (replay)
+        if: always()
+        run: npm run eval:compare -- --replay --quiet
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo "## Offline eval (synthetic replay set)"
+            echo
+            echo "Model responses come from hand-made synthetic cassettes; numbers exercise the pipeline, they are not model results."
+            echo
+            node -e 'const s=require("./reports/baseline/summary.json");const p=x=>(x*100).toFixed(1)+"%";console.log(`pass rate ${p(s.summary.totals.passRate)}, pass^k ${p(s.summary.consistency.passHatK)}, judge ${p(s.summary.judge.allCriteriaPassRate)}, cost $${s.summary.cost.totalUsd.toFixed(2)}`);console.log();console.log("| gate | result | actual | threshold |");console.log("|---|---|---|---|");for(const g of s.gates)console.log(`| ${g.name} | ${g.pass?"pass":"FAIL"} | ${g.actual} | ${g.threshold} |`)' || true
+            echo
+            cat reports/judge-calibration/calibration.md 2>/dev/null || true
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload HTML/JSON/JUnit reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: eval-reports
+          path: |
+            reports/baseline/
+            reports/compare/report.html
+            reports/compare/comparison.json
+            reports/judge-calibration/
+          retention-days: 14

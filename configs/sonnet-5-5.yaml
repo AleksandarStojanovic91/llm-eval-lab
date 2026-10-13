@@ -1,0 +1,9 @@
+# Prompt v2 on Claude Sonnet 5.5. No synthetic cassettes exist for this config: run it with --record and a budget.
+# Sonnet 5.5's API default effort is high; it is pinned to medium here so the comparison changes one thing.
+extends: ../eval.config.yaml
+name: sonnet-5-5
+description: Prompt v2 on Claude Sonnet 5.5.
+cassettes: cassettes/live
+assistant:
+  model: claude-sonnet-5-5
+  fallbacks: off          # the skill does not document fallbacks: "default" for Sonnet 5.5

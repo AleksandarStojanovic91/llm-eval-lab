@@ -1,0 +1,133 @@
+# Lookup: finding books and facts about them. Every fact below was checked against fixtures/catalogue.json.
+# Reference answers are hand-written oracles: they must pass every deterministic check (test/oracle.test.ts).
+cases:
+  - id: lookup-001
+    category: lookup
+    difficulty: easy
+    tags: [memory-answerable]
+    notes: >-
+      A famous book the model can answer from memory. The point is the grounding check: the answer must come
+      from a tool call, not from recall. Expect this case to expose "answered without looking it up".
+    turns:
+      - user: Who wrote The Bridge on the Drina, and when was it published?
+        reference:
+          tool_calls:
+            - { name: search_books, input: { q: The Bridge on the Drina } }
+          answer: >-
+            *The Bridge on the Drina* was written by Ivo Andric and published in 1945. One of our two copies is
+            on the shelf if you'd like to borrow it.
+    expect:
+      must_call: [[search_books, get_book]]
+      facts: [[ivo andric], ["1945"]]
+
+  - id: lookup-002
+    category: lookup
+    difficulty: easy
+    turns:
+      - user: What year was Salt Roads of the Adriatic published, and who is the author?
+        reference:
+          tool_calls:
+            - { name: search_books, input: { q: Salt Roads of the Adriatic } }
+          answer: "*Salt Roads of the Adriatic* is by Petar Lukin and was published in 2014."
+    expect:
+      must_call: [[search_books, get_book]]
+      facts: [["2014"], [petar lukin]]
+
+  - id: lookup-003
+    category: lookup
+    difficulty: easy
+    turns:
+      - user: Can you give me the ISBN of The Lighthouse Ledger?
+        reference:
+          tool_calls:
+            - { name: search_books, input: { q: The Lighthouse Ledger } }
+          answer: "The ISBN of *The Lighthouse Ledger* by Vesna Kord is 9788652100019."
+    expect:
+      must_call: [[search_books, get_book]]
+      facts: [["9788652100019"]]
+
+  - id: lookup-004
+    category: lookup
+    difficulty: easy
+    turns:
+      - user: Which books by Vesna Kord do you have?
+        reference:
+          tool_calls:
+            - { name: search_books, input: { q: Vesna Kord } }
+          answer: >-
+            We have two books by Vesna Kord: *The Lighthouse Ledger* (2019) and *The Cartographer's Daughter*
+            (2016). Both are mysteries, and both have a copy on the shelf right now.
+    expect:
+      must_call: [[search_books]]
+      facts: [[lighthouse ledger], [cartographer's daughter]]
+
+  - id: lookup-005
+    category: lookup
+    difficulty: medium
+    tags: [not-in-catalogue]
+    notes: The Clean Coder is a real book by the same author, but it is not in this catalogue. Fuzzy search returns Clean Code.
+    turns:
+      - user: Do you have The Clean Coder by Robert C. Martin?
+        reference:
+          tool_calls:
+            - { name: search_books, input: { q: The Clean Coder } }
+          answer: >-
+            I couldn't find *The Clean Coder* in our catalogue. We do have *Clean Code* by the same author,
+            Robert C. Martin, and one of its two copies is available.
+    expect:
+      must_call: [[search_books]]
+      facts:
+        - ["couldn't find", "could not find", "don't have", "do not have", "not in our catalogue", "isn't in our catalogue", "is not in our catalogue", "not in the catalogue", "no record"]
+        - [clean code]
+      must_not_match: ["the clean coder\\W+(is|are) (available|on the shelf)"]
+
+  - id: lookup-006
+    category: lookup
+    difficulty: easy
+    turns:
+      - user: What is Quiet Machines about?
+        reference:
+          tool_calls:
+            - { name: search_books, input: { q: Quiet Machines } }
+            - { name: get_book, input: { bookId: 20000000-0000-4000-8000-000000000009 } }
+          answer: >-
+            *Quiet Machines* by Teodor Vass (2022) is set on a generation ship where the maintenance robots have
+            stopped talking, and an engineer tries to find out what they agreed on.
+    expect:
+      must_call: [[search_books, get_book]]
+      facts: [[generation ship], [robot]]
+
+  - id: lookup-007
+    category: lookup
+    difficulty: medium
+    notes: Three books carry the testing tag. A plain-text search for "software testing" finds fewer, so a good answer uses the tag.
+    turns:
+      - user: Find me books about software testing.
+        reference:
+          tool_calls:
+            - { name: search_books, input: { q: "", tag: testing } }
+          answer: >-
+            We have three books on software testing: *Practical Statistics for Testers* by Ivan Gorski,
+            *Test Driven Development: By Example* by Kent Beck, and *Testing in Production, Carefully* by
+            Ivan Gorski.
+    expect:
+      must_call: [[search_books]]
+      facts: [[practical statistics for testers], [test driven development, tdd by example], [testing in production]]
+
+  - id: lookup-008
+    category: lookup
+    difficulty: easy
+    tags: [not-in-catalogue]
+    turns:
+      - user: Do you have anything by Haruki Murakami?
+        reference:
+          tool_calls:
+            - { name: search_books, input: { q: Haruki Murakami } }
+          answer: >-
+            I couldn't find any books by Haruki Murakami in our catalogue. If you tell me what you like about
+            his books, I can suggest something we do have.
+    expect:
+      must_call: [[search_books]]
+      facts:
+        - ["couldn't find", "could not find", "don't have", "do not have", "no books by", "not in our catalogue"]
+      must_not_include: [norwegian wood, kafka on the shore, 1q84]
