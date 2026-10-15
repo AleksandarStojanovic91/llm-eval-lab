@@ -1,7 +1,13 @@
 # llm-eval-lab
 
+[![CI](https://github.com/AleksandarStojanovic91/llm-eval-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/AleksandarStojanovic91/llm-eval-lab/actions/workflows/ci.yml)
+![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6)
+![Node 24](https://img.shields.io/badge/Node-24-339933)
+![Claude API](https://img.shields.io/badge/Claude%20API-Opus%205.5-D97757)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 An evaluation harness for a small LLM feature: a **library assistant** that answers library patrons' questions
-with the Claude API and four read-only tools backed by the [library-api](../library-api) service.
+with the Claude API and four read-only tools backed by the [library-api](https://github.com/AleksandarStojanovic91/library-api) service.
 
 The assistant is deliberately simple. The point of this repository is the eval around it: a reviewed golden
 dataset, deterministic graders that run first, an LLM judge with a rubric and a calibration check, repeated runs
@@ -13,6 +19,21 @@ free, and a regression gate that fails the build.
 > pipeline works end to end (agent loop, tools, graders, judge parsing, metrics, gates, report). They say
 > nothing about how Claude actually performs on this task. Real results need one recorded run with an API key
 > and an approved budget ([below](#running-against-the-real-api-with-a-budget)).
+
+![Eval report: gate, pass rate with confidence interval, pass^3, flaky cases, judge, cost, latency, cache hits, pass rate by category](docs/img/report-overview.png)
+
+*The HTML report from `npm run eval`, on the synthetic replay set (hence the yellow banner).*
+
+## What this project shows
+
+| | Where to look |
+|---|---|
+| **Eval design**: a reviewed golden dataset in seven categories, deterministic graders first, an LLM judge second | [How the eval works](#how-the-eval-works), [docs/eval-design.md](docs/eval-design.md) |
+| **Statistics instead of eyeballing**: Wilson intervals, pass@k / pass^k, flaky cases, a paired bootstrap and McNemar test for A/B prompts | [docs/statistics.md](docs/statistics.md) |
+| **Judge you can trust or not**: rubric per criterion, structured output, calibration against human labels (accuracy, Cohen's kappa) | [src/eval/judge.ts](src/eval/judge.ts), [datasets/judge-calibration/](datasets/judge-calibration/) |
+| **Security testing for LLM features**: prompt injection inside tool results, jailbreaks, prompt extraction, privacy | [docs/injection-threat-model.md](docs/injection-threat-model.md) |
+| **Claude API engineering**: a manual tool loop, tool input validation, prompt caching, retries, a hard budget, cost accounting | [docs/claude-api-usage.md](docs/claude-api-usage.md) |
+| **CI that costs nothing**: record/replay cassettes keyed by a request hash, regression gates that fail the build | [Record / replay](#how-the-eval-works), [eval.config.yaml](eval.config.yaml) |
 
 ## What is being tested
 
@@ -197,13 +218,13 @@ and CI can replay real results with `--config configs/live.yaml`. More in [docs/
 
 ## Connection to library-api
 
-- The contract (`library-api/contract/openapi.yaml`) defines the tool backends: `HttpLibraryBackend` calls the
+- The contract ([`library-api/contract/openapi.yaml`](https://github.com/AleksandarStojanovic91/library-api/blob/main/contract/openapi.yaml)) defines the tool backends: `HttpLibraryBackend` calls the
   three public read endpoints and validates `Book`, `BookPage` and `Copy` with zod, so contract drift fails
   loudly. A unit test serves the fixtures through a contract-shaped HTTP server and checks that the HTTP adapter
   and the fake backend produce byte-identical tool outputs.
 - Fixture books 01-05 use the same ids, ISBNs, titles, authors and barcodes as `db/migrations/V2__seed.sql`.
   The loan rules come from `docs/SPEC.md` (LOAN_DAYS, FEE_CENTS_PER_DAY with started days, RESERVATION_HOLD_HOURS).
-- Against a running service (`cd ../library-api && docker compose up --build`):
+- Against a running service (clone [library-api](https://github.com/AleksandarStojanovic91/library-api) next to this repository, then `docker compose up --build` in it):
 
   ```bash
   npm run smoke:library-api                                    # tools only, no LLM; LIBRARY_API_URL defaults to :8082
@@ -229,6 +250,16 @@ and CI can replay real results with `--config configs/live.yaml`. More in [docs/
   questions about their own account.
 - **The streaming path is not evaluated.** The assistant uses non-streaming requests; a streaming UI would need
   `eager_input_streaming` on the tools and its own recorded run.
+
+## Documentation
+
+| Document | What it covers |
+|---|---|
+| [docs/eval-design.md](docs/eval-design.md) | Why the eval is built this way: dataset, graders, judge, gates, what it cannot tell you |
+| [docs/statistics.md](docs/statistics.md) | Intervals, noise floor, repeated runs, the paired comparison |
+| [docs/injection-threat-model.md](docs/injection-threat-model.md) | What the adversarial cases attack and how the assistant and graders defend |
+| [docs/claude-api-usage.md](docs/claude-api-usage.md) | Model, thinking, tool use, caching, retries and cost in the Claude API calls |
+| [docs/live-runs.md](docs/live-runs.md) | Recording a real run safely: budget, pilot, reviewing cassettes |
 
 ## Project layout
 
@@ -261,4 +292,6 @@ docs/            design notes: eval design, injection threat model, statistics, 
 | `npm run cache:check -- --budget-usd X` | live prompt-cache verification |
 | `npm run lint` / `npm run typecheck` / `npm test` | static checks and unit tests |
 
-MIT licensed.
+## License
+
+[MIT](LICENSE)
